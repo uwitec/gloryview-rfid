@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="GloryView.RFID.SystemManagement.AlarmSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885" OpacityMask="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="116*" />
+            <ColumnDefinition Width="639" />
+            <ColumnDefinition Width="130*" />
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/GloryView.RFID;component/Skin/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*" />
+            <RowDefinition Height="34*" />
+            <RowDefinition Height="346" />
+            <RowDefinition Height="122*" />
+        </Grid.RowDefinitions>
+        <Grid Height="47" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="133" />
+                <ColumnDefinition Width="222" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="roomName" VerticalAlignment="Top" Width="118" FontSize="16" BorderBrush="Black" Content="警报设置" />
+        </Grid>
+        <GroupBox Grid.Column="1" Grid.Row="2" Header="警报设置" FontSize="14" OpacityMask="Black" Foreground="#94000000">
+            <Grid Background="#1A000000" OpacityMask="Black">
+                <GroupBox Header="温馨提示" Height="70" HorizontalAlignment="Left" Margin="6,19,0,0" Name="groupBox1" VerticalAlignment="Top" Width="615" Foreground="#FFFC0000">
+                    <Grid DataContext="{Binding}">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="/GloryView.RFID;component/Images/groud.jpg" />
+                        </Grid.Background>
+                        <TextBlock Padding="3" Text="您好！警报设置默认为开启，如果需要关闭要进行手动设置，警报级别默认状况下为正常报警级别，其他级别必须由管理员进行设置。" TextWrapping="Wrap" />
+                    </Grid>
+                </GroupBox>
+                <Label Content="报警级别：" Height="30" HorizontalAlignment="Left" Margin="47,95,0,0" Name="label1" VerticalAlignment="Top" Width="68" />
+                
+                
+                <RadioButton Content="正常报警" Height="22" HorizontalAlignment="Left" Margin="121,102,0,0" Name="radioButton1" VerticalAlignment="Top" Width="73" GroupName="alarm" IsChecked="True" />
+                <RadioButton Content="二级报警" Height="22" HorizontalAlignment="Left" Margin="200,103,0,0" Name="radioButton2" VerticalAlignment="Top" Width="73" GroupName="alarm" />
+                <RadioButton Content="三级报警" Height="22" HorizontalAlignment="Left" Margin="279,103,0,0" Name="radioButton3" VerticalAlignment="Top" Width="73" GroupName="alarm" />
+                <RadioButton Content="开  启" Height="24" HorizontalAlignment="Left" Margin="121,139,0,0" Name="radioButton4" VerticalAlignment="Top" Width="61" Background="{x:Null}" Foreground="#FF05EB0F" GroupName="warning" IsChecked="True" />
+                
+                
+                <Label Content="报警开关：" Height="33" HorizontalAlignment="Left" Margin="47,132,0,0" Name="label2" VerticalAlignment="Top" Width="68" />
+                <RadioButton Content="关  闭" Foreground="#FFFF000F" Height="24" HorizontalAlignment="Left" Margin="121,190,0,0" Name="radioButton5" VerticalAlignment="Top" Width="61" GroupName="warning" />
+                <RadioButton Content="暂  停" Height="27" HorizontalAlignment="Left" Margin="121,165,0,0" Name="radioButton6" VerticalAlignment="Top" Width="81" Foreground="#FF0082CC" GroupName="warning" />
+                <Button Content="保存设置" Height="33" HorizontalAlignment="Left" Margin="279,263,0,0" Name="button1" VerticalAlignment="Top" Width="104" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

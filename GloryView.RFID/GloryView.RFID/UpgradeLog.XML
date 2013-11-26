@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ColorPickerDemo">
+</Property><Property Name="解决方案文件" Value="C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\ColorPickerDemo.sln">
+</Property><Property Name="Date" Value="2013年10月29日">
+</Property><Property Name="Time" Value="10:44">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ColorPickerDemo.sln" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPickerDemo.sln">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="ColorPickerDemo.csproj" Description="项目文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPickerDemo.csproj">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="App.xaml.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="MainWindow.xaml.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\MainWindow.xaml.cs">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="Properties\Settings.settings" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="Properties\Resources.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="App.xaml" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\App.xaml">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="MainWindow.xaml" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\MainWindow.xaml">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="ColorPickerDemo.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="ColorPickerDemo" Source="ColorPickerDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="ColorPicker" Source="..\ColorPicker\ColorPicker.csproj" Description="警告: 正将项目文件备份到与原始解决方案相对路径不同的相对路径中。文件夹层次结构上的差异可能会导致在打开或生成备份的解决方案和项目时出现问题。">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorPicker.csproj" Description="项目文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\ColorPicker.csproj">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\BindOnEnterTextBox.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\BindOnEnterTextBox.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorComboBox.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\ColorComboBox.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorSlider.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\ColorSlider.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorUtils.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\ColorUtils.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorPicker.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\ColorPicker.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\HsvControl.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\HsvControl.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\SpectrumSlider.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\SpectrumSlider.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\Properties\Resources.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\Properties\Settings.Designer.cs" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\Properties\Settings.settings" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\Properties\Resources.resx" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\Themes\Generic.xaml" Description="文件已成功备份为 C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\Backup\ColorPicker\Themes\Generic.xaml">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorPicker.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="ColorPicker" Source="..\ColorPicker\ColorPicker.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ColorPickerDemo.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="ColorPickerDemo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ColorPickerDemo" Source="ColorPickerDemo.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="ColorPicker" Source="..\ColorPicker\ColorPicker.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

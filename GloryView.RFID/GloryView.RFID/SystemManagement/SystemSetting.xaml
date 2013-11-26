@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="GloryView.RFID.SystemManagement.SystemSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="181*" />
+            <ColumnDefinition Width="510*" />
+            <ColumnDefinition Width="181*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="147*" />
+            <RowDefinition Height="289*" />
+            <RowDefinition Height="114*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/GloryView.RFID;component/Skin/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+        </Grid.Background>
+        <Grid Height="47" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="181" />
+                <ColumnDefinition Width="512*" />
+                <ColumnDefinition Width="192*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="roomName" VerticalAlignment="Top" Width="118" FontSize="16" BorderBrush="Black" Content="系统设置" />
+        </Grid>
+        <GroupBox Background="#0D000000"  BorderBrush="#0C000000" BorderThickness="2" Header="服务器设置" Height="288" HorizontalAlignment="Left" Name="groupBox1" OpacityMask="Black" VerticalAlignment="Top" Width="512" Grid.Row="1" Grid.Column="1" FontStyle="Normal" FontWeight="Black" Grid.ColumnSpan="2" FontFamily="Minion Pro" DataContext="{Binding}" FontStretch="Normal" Foreground="Black">
+            <Grid Background="{x:Null}" OpacityMask="Black">
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="201,67,0,0" Name="textBox1" VerticalAlignment="Top" Width="163" />
+                <TextBlock Background="{x:Null}" FontSize="11" Height="23" HorizontalAlignment="Left" Margin="127,70,0,0" Name="textBlock1" Text="服务器IP：" VerticalAlignment="Top" Width="64" />
+                <TextBlock FontSize="11" Height="21" HorizontalAlignment="Left" Margin="128,102,0,0" Name="textBlock2" Text="通信端口：" VerticalAlignment="Top" Width="59" />
+                <TextBox Height="24" HorizontalAlignment="Left" Margin="201,96,0,0" Name="textBox2" VerticalAlignment="Top" Width="163" />
+                <TextBlock FontSize="11" Height="24" HorizontalAlignment="Left" Margin="117,129,0,0" Name="textBlock3" Text="数据库端口：" VerticalAlignment="Top" Width="73" />
+                <TextBox Height="25" HorizontalAlignment="Left" Margin="201,126,0,0" Name="textBox3" VerticalAlignment="Top" Width="163" />
+                <Button Content="保  存" FontSize="11" Height="23" HorizontalAlignment="Left" Margin="174,173,0,0" Name="button1" VerticalAlignment="Top" Width="72" />
+                <Button Content="取  消" FontSize="11" Height="23" HorizontalAlignment="Left" Margin="282,173,0,0" Name="button2" VerticalAlignment="Top" Width="72" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

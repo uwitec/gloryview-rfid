@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89CF5696-F116-4324-ABC0-FCC1FF859D1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GloryView.RFID</RootNamespace>
+    <AssemblyName>GloryView.RFID</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DClass.cs" />
+    <Compile Include="BusyDecorator.cs" />
+    <Compile Include="Controls\DataPager.xaml.cs">
+      <DependentUpon>DataPager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\ApplyDevice.xaml.cs">
+      <DependentUpon>ApplyDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\DeviceMigration.xaml.cs">
+      <DependentUpon>DeviceMigration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\DeviceMigrationsFactory.cs" />
+    <Compile Include="DeviceMigrations\DeviceMove.xaml.cs">
+      <DependentUpon>DeviceMove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\DevicePower.xaml.cs">
+      <DependentUpon>DevicePower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentDelivery.xaml.cs">
+      <DependentUpon>EquipmentDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentInformation.xaml.cs">
+      <DependentUpon>EquipmentInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentReview.xaml.cs">
+      <DependentUpon>EquipmentReview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Equipments .xaml.cs">
+      <DependentUpon>Equipments .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentScrapping.xaml.cs">
+      <DependentUpon>EquipmentScrapping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\MigrationDetails.xaml.cs">
+      <DependentUpon>MigrationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\NewEquipment.xaml.cs">
+      <DependentUpon>NewEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\OldEquipment.xaml.cs">
+      <DependentUpon>OldEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\RequestDiscarding.xaml.cs">
+      <DependentUpon>RequestDiscarding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Review.xaml.cs">
+      <DependentUpon>Review.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddEquipment.xaml.cs">
+      <DependentUpon>AddEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddRecycleLabels.xaml.cs">
+      <DependentUpon>AddRecycleLabels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddRoom.xaml.cs">
+      <DependentUpon>AddRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddRooms.xaml.cs">
+      <DependentUpon>AddRooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Alarm.xaml.cs">
+      <DependentUpon>Alarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AlarmDetails.xaml.cs">
+      <DependentUpon>AlarmDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AssetInventory.xaml.cs">
+      <DependentUpon>AssetInventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Category.xaml.cs">
+      <DependentUpon>Category.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\DeviceClass .xaml.cs">
+      <DependentUpon>DeviceClass .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\DeviceList.xaml.cs">
+      <DependentUpon>DeviceList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EditDeviceClass.xaml.cs">
+      <DependentUpon>EditDeviceClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EditRoom.xaml.cs">
+      <DependentUpon>EditRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EquipmentDetails.xaml.cs">
+      <DependentUpon>EquipmentDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EquipmentList.xaml.cs">
+      <DependentUpon>EquipmentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\HistoryAlarm.xaml.cs">
+      <DependentUpon>HistoryAlarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\RecycleLabels.xaml.cs">
+      <DependentUpon>RecycleLabels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Room.xaml.cs">
+      <DependentUpon>Room.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\RoomDetails.xaml.cs">
+      <DependentUpon>RoomDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\RoomManagerBean.cs" />
+    <Compile Include="RoomManagement\Statement.xaml.cs">
+      <DependentUpon>Statement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManager.cs" />
+    <Compile Include="SystemManagement\AlarmSetting.xaml.cs">
+      <DependentUpon>AlarmSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\BackupCycleSetting.xaml.cs">
+      <DependentUpon>BackupCycleSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\DataSecurity .xaml.cs">
+      <DependentUpon>DataSecurity .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\MovedDevicesLog.xaml.cs">
+      <DependentUpon>MovedDevicesLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\SystemManagerFactory.cs" />
+    <Compile Include="SystemManagement\SystemSetting.xaml.cs">
+      <DependentUpon>SystemSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\AllUserLog.xaml.cs">
+      <DependentUpon>AllUserLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\ActionLog.xaml.cs">
+      <DependentUpon>ActionLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\AddAdmin.xaml.cs">
+      <DependentUpon>AddAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\AddUser.xaml.cs">
+      <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DazzleButton.cs" />
+    <Compile Include="Controls\DazzleTabControl.cs" />
+    <Compile Include="Controls\DazzleTabItem.cs" />
+    <Compile Include="Controls\DazzleWindow.cs" />
+    <Compile Include="UserManager.IU\AddUsers.xaml.cs">
+      <DependentUpon>AddUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\ChangePaw.xaml.cs">
+      <DependentUpon>ChangePaw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\EditPower.xaml.cs">
+      <DependentUpon>EditPower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.xaml.cs">
+      <DependentUpon>MainForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelBase.cs" />
+    <Compile Include="MysqlDataDao.cs" />
+    <Compile Include="MysqlDataDaoImpl.cs" />
+    <Compile Include="UserManager.IU\EditUsers.xaml.cs">
+      <DependentUpon>EditUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\LoginLog.xaml.cs">
+      <DependentUpon>LoginLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\Message.xaml.cs">
+      <DependentUpon>Message.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\Show.xaml.cs">
+      <DependentUpon>Show.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\UserManagerBean.cs" />
+    <Compile Include="Utilities\DateHelper.cs" />
+    <Compile Include="Utilities\StringHelper.cs" />
+    <Compile Include="Utilities\ValidateUtil.cs" />
+    <Compile Include="Util\WindowBehaviorHelper.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Models\3ds\Panasonic N020908.3DS" />
+    <None Include="Models\3ds\Sofa 2 N050210.3DS" />
+    <None Include="Models\3ds\Table 2 N130110.3DS" />
+    <None Include="Properties\DataSources\AddUser.datasource" />
+    <None Include="Properties\DataSources\App.datasource" />
+    <None Include="Properties\DataSources\BusyAdorner.datasource" />
+    <None Include="Properties\DataSources\BusyChrome.datasource" />
+    <None Include="Properties\DataSources\BusyDecorator.datasource" />
+    <None Include="Properties\DataSources\EditPower.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DataPager.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleButton.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleTabControl.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleTabItem.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleWindow.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.DeviceMigration.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.DeviceMigrationsFactory.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.DevicePower.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.EquipmentDelivery.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.Equipments.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.EquipmentScrapping.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.NewEquipment.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.OldEquipment.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.Alarm.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.AssetInventory.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.DeviceClass.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.DeviceList.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.EquipmentList.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.Room.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.RoomManagerBean.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.Statement.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.AllUserLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.BackupCycleSetting.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.DataSecurity.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.MovedDevicesLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.SystemManagerFactory.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.SystemSetting.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.ActionLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.Add.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.AddAdmin.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.ChangePaw.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.LoginLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.Show.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.UserManagerBean.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Util.WindowBehaviorHelper+HitTest.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Util.WindowBehaviorHelper.datasource" />
+    <None Include="Properties\DataSources\MainForm.datasource" />
+    <None Include="Properties\DataSources\MainWindow.datasource" />
+    <None Include="Properties\DataSources\ModelBase.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.MysqlDataDao.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.MysqlDataDaoImpl.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.Utilities.DateHelper.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.Utilities.StringHelper.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.Utilities.ValidateUtil.datasource" />
+    <None Include="Properties\DataSources\_3DClass.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files\MySQL\MySQL Connector Net 5.0.6\Binaries\.NET 2.0\MySql.Data.dll" />
+    <ReferencePath Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\bin\Debug\MySQLDriverCS.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.configuration.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\Controls\DataPager.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\ApplyDevice.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\DeviceMigration.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\DeviceMove.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\DevicePower.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\EquipmentDelivery.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\EquipmentInformation.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\EquipmentReview.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\Equipments .g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\EquipmentScrapping.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\MigrationDetails.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\NewEquipment.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\OldEquipment.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\RequestDiscarding.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\DeviceMigrations\Review.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\AddEquipment.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\AddRecycleLabels.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\AddRoom.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\AddRooms.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\Alarm.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\AlarmDetails.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\AssetInventory.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\Category.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\DeviceClass .g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\DeviceList.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\EditDeviceClass.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\EditRoom.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\EquipmentDetails.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\EquipmentList.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\HistoryAlarm.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\RecycleLabels.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\Room.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\RoomDetails.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\RoomManagement\Statement.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\SystemManagement\AlarmSetting.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\SystemManagement\BackupCycleSetting.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\SystemManagement\DataSecurity .g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\SystemManagement\MovedDevicesLog.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\SystemManagement\SystemSetting.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\SystemManagement\AllUserLog.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\ActionLog.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\Add.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\AddAdmin.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\AddUser.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\AddUsers.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\ChangePaw.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\EditPower.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\MainForm.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\MainWindow.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\EditUsers.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\LoginLog.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\Message.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\UserManager.IU\Show.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\App.g.cs" />
+    <Compile Include="E:\workplace\WPF\GloryView.RFID\GloryView.RFID\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>

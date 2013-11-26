@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="GloryView.RFID.RoomManagement.AddRoom"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GloryView.RFID.PageControl"
+             xmlns:ut="clr-namespace:GloryView.RFID.User"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885">
+    <UserControl.Resources>
+        <ut:DateString x:Key="dateStr" />
+    </UserControl.Resources>
+    <Grid x:Name="add_room">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="503*" />
+            <RowDefinition Height="47*" />
+        </Grid.RowDefinitions>
+        <Grid Height="47" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="133" />
+                <ColumnDefinition Width="421" />
+                <ColumnDefinition Width="331*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="roomName" VerticalAlignment="Top" Width="118" FontSize="16" BorderBrush="Black" Content="机房列表" />
+            <Image Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="367,10,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="41" Source="/GloryView.RFID;component/Skin/house.png" MouseDown="addRoom" />
+        </Grid>
+        <DataGrid Margin="0,49,0,0" Name="roomDate" AutoGenerateColumns="False" CanUserAddRows="False"  FontSize="12" IsReadOnly="True" BorderThickness="0" HorizontalScrollBarVisibility="Auto" Opacity="1" AlternatingRowBackground="{x:Null}">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Images/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+            </DataGrid.Background>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--当鼠标经过时 改变颜色-->
+                            <Setter Property="Background" Value="SkyBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="5" Binding="{Binding ID}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="机房名" Width="100*" Binding="{Binding ROOM_NAME}" />
+                <DataGridTextColumn Header="用 途" Width="100*" Binding="{Binding PURPOSE}"/>
+                <DataGridTextColumn Header="所属单位" Width="100*" Binding="{Binding BELONGS}" />
+                <DataGridTextColumn Header="所在楼层" Width="100*" Binding="{Binding FLOOR}"/>
+                <DataGridTextColumn Header="创建用户" Width="100*" Binding="{Binding USER_NAME}"/>
+                <DataGridTextColumn Header="创建时间" Width="100*" Binding="{Binding CREATION_DATE, Converter={StaticResource dateStr}}"/>
+                <DataGridTemplateColumn Header="操 作" Width="100*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="编 辑" Height="22"  HorizontalAlignment="Center" Name="button2" VerticalAlignment="Top" Width="69" BorderThickness="0" BorderBrush="{x:Null}" FontSize="11"  Click="Edit_Room"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <local:Pager x:Name="page" Grid.Row="1" Background="#04000000"></local:Pager>
+    </Grid>
+</UserControl>

@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89CF5696-F116-4324-ABC0-FCC1FF859D1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GloryView.RFID</RootNamespace>
+    <AssemblyName>GloryView.RFID</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>129.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="3DTools">
+      <HintPath>C:\Users\john\Desktop\3DTools.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorPicker">
+      <HintPath>C:\Users\Administrator\Desktop\ColorPicker2010_src\ColorPickerDemo\bin\Debug\ColorPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorPickerCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassDvice\ColorPickerCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\Administrator\Desktop\UsrCustomFun\UsrCustomFun\UsrCustomFun\bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\Administrator\Desktop\UsrCustomFun\UsrCustomFun\UsrCustomFun\bin\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=1.0.4.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Desktop\UsrCustomFun\UsrCustomFun\UsrCustomFun\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>ClassDvice\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.CommandBars, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ModuleAPI, Version=1.11.7.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassDvice\ModuleAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassDvice\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassDvice\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ClassDvice\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Transitionals, Version=1.2.0.0, Culture=neutral, PublicKeyToken=4747a3d6bcb35c80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Transitionals.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Aroow.cs" />
+    <Compile Include="BusyDecorator.cs" />
+    <Compile Include="ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPickerDemo\ColorForm.xaml.cs">
+      <DependentUpon>ColorForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPickerDemo\ColorPicker\BindingHelper.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\BindOnEnterTextBox.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\ColorComboBox.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\ColorPicker.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\ColorSlider.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\ColorUtils.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\HsvControl.cs" />
+    <Compile Include="ColorPickerDemo\ColorPicker\SpectrumSlider.cs" />
+    <Compile Include="DeviceMigrations\AddEquipment.xaml.cs">
+      <DependentUpon>AddEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\addposition.xaml.cs">
+      <DependentUpon>addposition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\AddReaderWrider.xaml.cs">
+      <DependentUpon>AddReaderWrider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\addwindow.xaml.cs">
+      <DependentUpon>addwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Controls\BindingHelper.cs" />
+    <Compile Include="DeviceMigrations\Controls\DataPager.xaml.cs">
+      <DependentUpon>DataPager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Addserver.xaml.cs">
+      <DependentUpon>Addserver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Alterserver.xaml.cs">
+      <DependentUpon>Alterserver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\ApplyDevice.xaml.cs">
+      <DependentUpon>ApplyDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Deleteserver.xaml.cs">
+      <DependentUpon>Deleteserver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\DeviceClass\DeviceBean.cs" />
+    <Compile Include="DeviceMigrations\DeviceClass\EquipmentClass.cs" />
+    <Compile Include="DeviceMigrations\DeviceClass\StatusConverter.cs" />
+    <Compile Include="DeviceMigrations\DeviceClass\WriterReaderBean.cs" />
+    <Compile Include="DeviceMigrations\DeviceMigration.xaml.cs">
+      <DependentUpon>DeviceMigration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\DeviceMigrationsFactory.cs" />
+    <Compile Include="DeviceMigrations\DeviceMove.xaml.cs">
+      <DependentUpon>DeviceMove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\DevicePower.xaml.cs">
+      <DependentUpon>DevicePower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EditEquipments.xaml.cs">
+      <DependentUpon>EditEquipments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentDelivery.xaml.cs">
+      <DependentUpon>EquipmentDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentInformation.xaml.cs">
+      <DependentUpon>EquipmentInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentReview.xaml.cs">
+      <DependentUpon>EquipmentReview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Equipments .xaml.cs">
+      <DependentUpon>Equipments .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\EquipmentScrapping.xaml.cs">
+      <DependentUpon>EquipmentScrapping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\MigrationDetails.xaml.cs">
+      <DependentUpon>MigrationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\motor.xaml.cs">
+      <DependentUpon>motor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\NewEquipment.xaml.cs">
+      <DependentUpon>NewEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\OldEquipment.xaml.cs">
+      <DependentUpon>OldEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\RepairEquipment.xaml.cs">
+      <DependentUpon>RepairEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\RequestDiscarding.xaml.cs">
+      <DependentUpon>RequestDiscarding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Review.xaml.cs">
+      <DependentUpon>Review.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\TakeDelivery.xaml.cs">
+      <DependentUpon>TakeDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\TakeMove.xaml.cs">
+      <DependentUpon>TakeMove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\TakeRepair.xaml.cs">
+      <DependentUpon>TakeRepair.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\TakeRepairComing.xaml.cs">
+      <DependentUpon>TakeRepairComing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\TakeScrapping.xaml.cs">
+      <DependentUpon>TakeScrapping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelObject.cs" />
+    <Compile Include="ModelWall.cs" />
+    <Compile Include="NewRoom.cs" />
+    <Compile Include="PageControl\JXMessageBox.xaml.cs">
+      <DependentUpon>JXMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageControl\Pager.xaml.cs">
+      <DependentUpon>Pager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageControl\T4PopupControl.cs" />
+    <Compile Include="PageControl\T4PopupControl.xaml.cs">
+      <DependentUpon>T4PopupControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageControl\TreeViewLineConverter.cs" />
+    <Compile Include="PrintDocument\AlarmEnum.cs" />
+    <Compile Include="PrintDocument\ExcelHelper.cs" />
+    <Compile Include="PrintDocument\ExportFile.cs" />
+    <Compile Include="PrintDocument\ExportFileSql.cs" />
+    <Compile Include="PrintDocument\Export_Window.xaml.cs">
+      <DependentUpon>Export_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDocument\FileBean.cs" />
+    <Compile Include="ReaderAndWriterClass\AntAndBoll.cs" />
+    <Compile Include="ReaderAndWriterClass\NumberFormat.cs" />
+    <Compile Include="ReaderAndWriterClass\ReaderAndWriterConnection.cs" />
+    <Compile Include="ReaderAndWriterClass\ReaderParams.cs" />
+    <Compile Include="RoomManagement\AddDeviceClass.xaml.cs">
+      <DependentUpon>AddDeviceClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddEquipment.xaml.cs">
+      <DependentUpon>AddEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddRecycleLabels.xaml.cs">
+      <DependentUpon>AddRecycleLabels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddRoom.xaml.cs">
+      <DependentUpon>AddRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AddRooms.xaml.cs">
+      <DependentUpon>AddRooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Alarm.xaml.cs">
+      <DependentUpon>Alarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AlarmDetails.xaml.cs">
+      <DependentUpon>AlarmDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\AssetInventory.xaml.cs">
+      <DependentUpon>AssetInventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\DeviceClass .xaml.cs">
+      <DependentUpon>DeviceClass .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\DeviceList.xaml.cs">
+      <DependentUpon>DeviceList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EditDeviceClass.xaml.cs">
+      <DependentUpon>EditDeviceClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EditEquipment.xaml.cs">
+      <DependentUpon>EditEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EditRoom.xaml.cs">
+      <DependentUpon>EditRoom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EditWriteAndReader.xaml.cs">
+      <DependentUpon>EditWriteAndReader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EquipmentList.xaml.cs">
+      <DependentUpon>EquipmentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\EquipmentsDetails.xaml.cs">
+      <DependentUpon>EquipmentsDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\HistoryAlarm.xaml.cs">
+      <DependentUpon>HistoryAlarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\HistoryEquipment.xaml.cs">
+      <DependentUpon>HistoryEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\HistoryEquipmentDetails.xaml.cs">
+      <DependentUpon>HistoryEquipmentDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\RecycleLabels.xaml.cs">
+      <DependentUpon>RecycleLabels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\Room.xaml.cs">
+      <DependentUpon>Room.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\RoomDetails.xaml.cs">
+      <DependentUpon>RoomDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\RoomManagerBean.cs" />
+    <Compile Include="RoomManagement\Rooms\EquipmentBean.cs" />
+    <Compile Include="RoomManagement\Rooms\EquipmentConverter.cs" />
+    <Compile Include="RoomManagement\Rooms\MainsConverter.cs" />
+    <Compile Include="RoomManagement\Rooms\QueryRooms.cs" />
+    <Compile Include="RoomManagement\Rooms\RoomBean.cs" />
+    <Compile Include="RoomManagement\Rooms\RoomClass.cs" />
+    <Compile Include="RoomManagement\Statement.xaml.cs">
+      <DependentUpon>Statement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\TreatmentAlarm.xaml.cs">
+      <DependentUpon>TreatmentAlarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RoomManagement\WriteAndReaderInfo.xaml.cs">
+      <DependentUpon>WriteAndReaderInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\AlarmSetting.xaml.cs">
+      <DependentUpon>AlarmSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\BackupCycleSetting.xaml.cs">
+      <DependentUpon>BackupCycleSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\DataSecurity .xaml.cs">
+      <DependentUpon>DataSecurity .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\MovedDevicesLog.xaml.cs">
+      <DependentUpon>MovedDevicesLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\OperationEquipmentInfo.xaml.cs">
+      <DependentUpon>OperationEquipmentInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\SystemClass\DatabaseBackupAndRestore.cs" />
+    <Compile Include="SystemManagement\SystemClass\OperateTypeStr.cs" />
+    <Compile Include="SystemManagement\SystemClass\OperationTypeString.cs" />
+    <Compile Include="SystemManagement\SystemClass\SystemManager.cs" />
+    <Compile Include="SystemManagement\SystemManagerFactory.cs" />
+    <Compile Include="SystemManagement\SystemSetting.xaml.cs">
+      <DependentUpon>SystemSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManagement\AllUserLog.xaml.cs">
+      <DependentUpon>AllUserLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\ActionLog.xaml.cs">
+      <DependentUpon>ActionLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\AddAdmin.xaml.cs">
+      <DependentUpon>AddAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\AddUser.xaml.cs">
+      <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceMigrations\Controls\DazzleButton.cs" />
+    <Compile Include="DeviceMigrations\Controls\DazzleTabControl.cs" />
+    <Compile Include="DeviceMigrations\Controls\DazzleTabItem.cs" />
+    <Compile Include="DeviceMigrations\Controls\DazzleWindow.cs" />
+    <Compile Include="UserManager.IU\AddUsers.xaml.cs">
+      <DependentUpon>AddUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\ChangePaw.xaml.cs">
+      <DependentUpon>ChangePaw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\DoAddUser.xaml.cs">
+      <DependentUpon>DoAddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\EditPower.xaml.cs">
+      <DependentUpon>EditPower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.xaml.cs">
+      <DependentUpon>MainForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\EditUser.xaml.cs">
+      <DependentUpon>EditUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\LoginLog.xaml.cs">
+      <DependentUpon>LoginLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\Show.xaml.cs">
+      <DependentUpon>Show.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.IU\UserManagerBean.cs" />
+    <Compile Include="User\DateString.cs" />
+    <Compile Include="User\QueryUser.cs" />
+    <Compile Include="User\StatusConverter.cs" />
+    <Compile Include="User\StringConverter.cs" />
+    <Compile Include="User\UserBean.cs" />
+    <Compile Include="User\Users.cs" />
+    <Compile Include="Utilities\AlarmClass.cs" />
+    <Compile Include="Utilities\BaseRequest.cs" />
+    <Compile Include="Utilities\DateHelper.cs" />
+    <Compile Include="Utilities\MySqlHelper.cs" />
+    <Compile Include="Utilities\MyTransaction.cs" />
+    <Compile Include="Utilities\SearchBean.cs" />
+    <Compile Include="Utilities\Session.cs" />
+    <Compile Include="Utilities\SqlAppend.cs" />
+    <Compile Include="Utilities\StringHelper.cs" />
+    <Compile Include="Utilities\TimeEvent.cs" />
+    <Compile Include="Utilities\TimeOutExitSystem.cs" />
+    <Compile Include="Utilities\ValidateUtil.cs" />
+    <Compile Include="Util\WindowBehaviorHelper.cs" />
+    <Compile Include="Xmal.cs" />
+    <Page Include="ChangePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColorPickerDemo\ColorForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColorPickerDemo\Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\AddEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\addposition.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\AddReaderWrider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\addwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\Controls\DataPager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\Addserver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\Alterserver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\ApplyDevice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\Deleteserver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\DeviceMigration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\DeviceMove.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\DevicePower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\EditEquipments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\EquipmentDelivery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\EquipmentInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\EquipmentReview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\Equipments .xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\EquipmentScrapping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\MigrationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\motor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeviceMigrations\NewEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\OldEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\RepairEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\RequestDiscarding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\Review.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\TakeDelivery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\TakeMove.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\TakeRepair.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\TakeRepairComing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceMigrations\TakeScrapping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageControl\JXMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageControl\Pager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageControl\T4PopupControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrintDocument\Export_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AddDeviceClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AddEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AddRecycleLabels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AddRoom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AddRooms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\Alarm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AlarmDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\AssetInventory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\DeviceClass .xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\DeviceList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\EditDeviceClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\EditEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\EditRoom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\EditWriteAndReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\EquipmentList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RoomManagement\EquipmentsDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\HistoryAlarm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\HistoryEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\HistoryEquipmentDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\RecycleLabels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\Room.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\RoomDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\Statement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\TreatmentAlarm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RoomManagement\WriteAndReaderInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\AlarmSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\BackupCycleSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\DataSecurity .xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\MovedDevicesLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\OperationEquipmentInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\SystemSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemManagement\AllUserLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\ActionLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\AddAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\AddUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\AddUsers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\ChangePaw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\DoAddUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\EditPower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Themes\DazzleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DazzleTabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DazzleTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DazzleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserManager.IU\EditUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\LoginLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManager.IU\Show.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\AddUser.datasource" />
+    <None Include="Properties\DataSources\App.datasource" />
+    <None Include="Properties\DataSources\BusyAdorner.datasource" />
+    <None Include="Properties\DataSources\BusyChrome.datasource" />
+    <None Include="Properties\DataSources\BusyDecorator.datasource" />
+    <None Include="Properties\DataSources\EditPower.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DataPager.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleButton.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleTabControl.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleTabItem.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Controls.DazzleWindow.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.DeviceMigration.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.DeviceMigrationsFactory.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.DevicePower.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.EquipmentDelivery.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.Equipments.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.EquipmentScrapping.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.NewEquipment.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.DeviceMigrations.OldEquipment.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.Alarm.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.AssetInventory.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.DeviceClass.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.DeviceList.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.EquipmentList.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.Room.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.RoomManagerBean.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.RoomManagement.Statement.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.AllUserLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.BackupCycleSetting.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.DataSecurity.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.MovedDevicesLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.SystemManagerFactory.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.SystemManagement.SystemSetting.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.ActionLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.Add.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.AddAdmin.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.ChangePaw.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.LoginLog.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.Show.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.UserManager.IU.UserManagerBean.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Util.WindowBehaviorHelper+HitTest.datasource" />
+    <None Include="Properties\DataSources\GloryView.RFID.Util.WindowBehaviorHelper.datasource" />
+    <None Include="Properties\DataSources\MainForm.datasource" />
+    <None Include="Properties\DataSources\MainWindow.datasource" />
+    <None Include="Properties\DataSources\ModelBase.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.MysqlDataDao.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.MysqlDataDaoImpl.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.Utilities.DateHelper.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.Utilities.StringHelper.datasource" />
+    <None Include="Properties\DataSources\WpfApplication2.Utilities.ValidateUtil.datasource" />
+    <None Include="Properties\DataSources\_3DClass.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\826eace3198b443461ae66240556e9e0.jpg" />
+    <Resource Include="Images\826eace3198b443461ae66240556e9e01.jpg" />
+    <Resource Include="Images\826eace3198b443461ae66240556e9e02.jpg" />
+    <Resource Include="Images\asd1.jpg" />
+    <Resource Include="Images\groud.jpg" />
+    <Resource Include="Images\groud1.jpg" />
+    <Resource Include="Images\m_1305690169624.jpg" />
+    <Resource Include="Images\QQ图片20130729125632.jpg" />
+    <Resource Include="Images\QQ图片20130730145834.jpg" />
+    <Resource Include="Images\reset.jpg" />
+    <Resource Include="Images\submit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\blueprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user\dt-arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user\MBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\user\variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\57.jpg" />
+    <Resource Include="Img\Button\button_begin.png" />
+    <Resource Include="Img\Button\button_check %281%29.png" />
+    <Resource Include="Img\Button\button_check.png" />
+    <Resource Include="Img\Button\button_checked.png" />
+    <Resource Include="Img\Button\button_cross.png" />
+    <Resource Include="Img\Button\button_eject.png" />
+    <Resource Include="Img\Button\button_end.png" />
+    <Resource Include="Img\Button\button_ff.png" />
+    <Resource Include="Img\Button\button_play.png" />
+    <Resource Include="Img\Button\button_power.png" />
+    <Resource Include="Img\Button\button_reload.png" />
+    <Resource Include="Img\Button\button_remove.png" />
+    <Resource Include="Img\Button\button_rew.png" />
+    <Resource Include="Img\Button\button_rotate_ccw.png" />
+    <Resource Include="Img\Button\button_rotate_cw.png" />
+    <Resource Include="Img\Button\editclear.png" />
+    <Resource Include="Img\Button\information_button.png" />
+    <Resource Include="Img\Button\navigation_down_button.png" />
+    <Resource Include="Img\Button\navigation_left_button.png" />
+    <Resource Include="Img\Button\navigation_right_button.png" />
+    <Resource Include="Img\Button\navigation_up_button.png" />
+    <Resource Include="Img\Button\question_button.png" />
+    <Resource Include="Img\Button\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Page_TextBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UIImage\hd_win.png" />
+    <Resource Include="Images\UIImage\home_32x32.png" />
+    <Resource Include="Images\UIImage\Equipment.png" />
+    <Resource Include="Images\UIImage\logBG.jpg" />
+    <Resource Include="Images\UIImage\MenuBg.jpg" />
+    <Resource Include="Images\UIImage\userBG.jpg" />
+    <Resource Include="Images\UIImage\booderg.jpg" />
+    <Resource Include="SystemManagement\SystemClass\BackupIni.txt" />
+    <Resource Include="Skin\add.png" />
+    <Resource Include="Skin\addso.png" />
+    <Resource Include="Skin\addUser.png" />
+    <Resource Include="Skin\Bd\background_mainwnd.png" />
+    <Resource Include="Skin\Bd\enter.png" />
+    <Resource Include="Skin\Bd\logo.png" />
+    <Resource Include="Skin\Bd\mover.png" />
+    <Resource Include="Skin\bg.png" />
+    <Resource Include="Skin\blueprint.png" />
+    <Resource Include="Skin\bts.gif" />
+    <Resource Include="Skin\Button\mie.png" />
+    <Resource Include="Skin\Button\mim.png" />
+    <Resource Include="Skin\Button\min.png" />
+    <Resource Include="Skin\Button\mme.png" />
+    <Resource Include="Skin\Button\mmm.png" />
+    <Resource Include="Skin\Button\mmn.png" />
+    <Resource Include="Skin\Button\mse.png" />
+    <Resource Include="Skin\Button\msm.png" />
+    <Resource Include="Skin\Button\msn.png" />
+    <Resource Include="Skin\Button\mxe.png" />
+    <Resource Include="Skin\Button\mxm.png" />
+    <Resource Include="Skin\Button\mxn.png" />
+    <Resource Include="Skin\Button\ske.png" />
+    <Resource Include="Skin\Button\skm.png" />
+    <Resource Include="Skin\Button\skn.png" />
+    <Resource Include="Skin\Button\xe.png" />
+    <Resource Include="Skin\Button\xm.png" />
+    <Resource Include="Skin\Button\xn.png" />
+    <Resource Include="Skin\close.png" />
+    <Resource Include="Skin\device.png" />
+    <Resource Include="Skin\home.png" />
+    <Resource Include="Skin\house.png" />
+    <Resource Include="Skin\Icon\ico_dsmain.png" />
+    <Resource Include="Skin\Icon\ico_Examine.png" />
+    <Resource Include="Skin\Icon\ico_softmgr.png" />
+    <Resource Include="Skin\Icon\ico_SpeedupOpt.png" />
+    <Resource Include="Skin\Icon\ico_SysRepair.png" />
+    <Resource Include="Skin\Icon\ico_TraceCleaner.png" />
+    <Resource Include="Skin\Icon\ico_VulRepair.png" />
+    <Resource Include="Skin\index.jpg" />
+    <Resource Include="Skin\ldxf.png" />
+    <Resource Include="Skin\listBox.jpg" />
+    <Resource Include="Skin\move.png" />
+    <Resource Include="Skin\moveBG.jpg" />
+    <Resource Include="Skin\muma.png" />
+    <Resource Include="Skin\save.png" />
+    <Resource Include="Skin\search-icon.png" />
+    <Resource Include="Skin\stg.png" />
+    <Resource Include="Skin\sys.png" />
+    <Resource Include="Skin\ubg.png" />
+    <Resource Include="Skin\user.png" />
+    <Resource Include="Skin\users.ico" />
+    <Resource Include="Skin\xtql.png" />
+    <Resource Include="Skin\xtxf.png" />
+    <Resource Include="Skin\xtyh.png" />
+    <Resource Include="Images\UIImage\zone.png" />
+    <Resource Include="129.ico" />
+    <Content Include="ClassDvice\ColorPickerCtrl.dll" />
+    <Content Include="ClassDvice\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="ClassDvice\Interop.Excel.dll" />
+    <Content Include="ClassDvice\Interop.Microsoft.Office.Core.dll" />
+    <Content Include="ClassDvice\itextsharp.dll" />
+    <Content Include="ClassDvice\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="ClassDvice\ModuleAPI.dll" />
+    <Content Include="ClassDvice\MySql.Data.dll" />
+    <Content Include="ClassDvice\System.Drawing.dll" />
+    <Content Include="ClassDvice\System.Windows.Forms.dll" />
+    <Content Include="ClassDvice\Transitionals.dll" />
+    <Resource Include="Images\user\add.png" />
+    <Resource Include="Images\user\savePassword.png" />
+    <Resource Include="Images\user\updatePassword.png" />
+    <Resource Include="Images\user\exit.png" />
+    <Resource Include="Images\user\add_user.png" />
+    <Resource Include="Images\user\search.png" />
+    <Resource Include="Images\user\managerUsers.png" />
+    <Resource Include="Images\user\AddUser.png" />
+    <Resource Include="Images\user\editusers.png" />
+    <Resource Include="Images\user\editUser.png" />
+    <Resource Include="Images\UIImage\edit.png" />
+    <Resource Include="Images\UIImage\publish.png" />
+    <Resource Include="Images\user\20076913916483.png" />
+    <Resource Include="Images\user\20076913913224.png" />
+    <Resource Include="Palette.ico" />
+    <Resource Include="UpgradeLog.XML" />
+    <Resource Include="Images\user\%255II5C}~~Z{Q%29PZA1NTC{`B.jpg" />
+    <Resource Include="Images\user\TZAD]RA9A7D884I_0B]UE_L.jpg" />
+    <Resource Include="Images\user\21294124.gif" />
+    <Resource Include="Images\user\00.png" />
+    <Resource Include="Images\user\05.png" />
+    <Resource Include="Images\user\06.png" />
+    <Resource Include="Images\user\10.png" />
+    <Resource Include="Images\user\11.png" />
+    <Resource Include="Images\user\12.png" />
+    <Resource Include="Images\user\13.png" />
+    <Resource Include="Images\user\18.png" />
+    <Resource Include="Images\user\21.png" />
+    <Resource Include="Images\user\22.png" />
+    <Resource Include="Images\user\23.png" />
+    <Resource Include="Images\user\26.png" />
+    <Resource Include="Images\user\27.png" />
+    <Resource Include="Images\user\28.png" />
+    <Resource Include="Images\user\29.png" />
+    <Resource Include="Images\user\30.png" />
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\error.png" />
+    <Resource Include="Images\question.png" />
+    <Resource Include="Images\success.png" />
+    <Resource Include="Images\wonder.png" />
+    <Resource Include="Images\listBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

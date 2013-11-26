@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="GloryView.RFID.UserManager.IU.AddUsers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="510" x:Name="addUsers">
+    <Grid Background="#20000000">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="306" />
+            <RowDefinition Height="30*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="18*" />
+            <ColumnDefinition Width="491" />
+            <ColumnDefinition Width="19*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="142*" />
+                <ColumnDefinition Width="349*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="76*" />
+            </Grid.RowDefinitions>
+            <Button Content="确   定" Grid.Row="7" Height="28" HorizontalAlignment="Left" Margin="1,29,0,0" Name="commit" VerticalAlignment="Top" Width="74" FontSize="11" Click="Submit_AddUser" Grid.Column="1" />
+                <Button Content="取   消" Grid.Row="7" Height="28" HorizontalAlignment="Left" Margin="140,29,0,0" Name="close" VerticalAlignment="Top" Width="76" Click="close_Click" FontSize="11" Grid.Column="1" />
+            <Label Content="*" Grid.Row="6" Height="24" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label2" VerticalAlignment="Top" Width="20" Foreground="Red" />
+            <Label Content="*" Foreground="Red" Height="24" HorizontalAlignment="Left" Margin="6,4,0,0" Name="label3" VerticalAlignment="Top" Width="20" Grid.Row="3" />
+            <Label Content="*" Foreground="Red" Height="24" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label6" VerticalAlignment="Top" Width="20" Grid.Row="2" />
+            <Label Content="*" Foreground="Red" Height="24" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label7" VerticalAlignment="Top" Width="20" Grid.Row="1" />
+            <Label Content="*" Foreground="Red" Height="24" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label8" VerticalAlignment="Top" Width="20" Grid.Row="5" />
+            <TextBlock Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Width="490" Grid.ColumnSpan="2"><TextBlock.Background><ImageBrush ImageSource="/GloryView.RFID;component/Images/groud1.jpg" /></TextBlock.Background></TextBlock>
+            <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="1">
+                <Label Content="帐 号：" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="2">
+                <Label Content="姓 名：" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="3">
+                <Label Content="用户类型：" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="4" Margin="1,0,0,0">
+                <Label Content="联系电话：" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="5">
+                <Label Content="密 码：" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,0,1" Grid.Row="6">
+                <Label Content="再次输入密码：" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,0" Grid.Column="1" Grid.Row="1">
+                <TextBox Name="account" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,0" Grid.Column="1" Grid.Row="2">
+                <TextBox Name="userName" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,0" Grid.Column="1" Grid.Row="3">
+                <Label Background="White" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,0" Grid.Column="1" Grid.Row="4">
+                <TextBox Name="phone" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,0" Grid.Column="1" Grid.Row="5">
+                <PasswordBox Name="password" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,1" Grid.Column="1" Grid.Row="6">
+                <PasswordBox Name="password2" />
+            </Border>
+            <ComboBox Height="24" Name="userType" FontSize="11" Grid.Column="1" Margin="1,3,248,3" Grid.Row="3">
+                <ComboBoxItem Content="普通用户" IsSelected="True" Tag="0" x:Uid="0" />
+                <ComboBoxItem Content="管理员" Tag="1" x:Uid="1" />
+            </ComboBox>
+            <Image Height="44" HorizontalAlignment="Left" Margin="6,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="66" Source="/GloryView.RFID;component/Images/user/add_user.png" />
+            <Label Content="新用户信息填写" Grid.ColumnSpan="2" Height="36" HorizontalAlignment="Left" Margin="68,9,0,0" Name="label1" VerticalAlignment="Top" Width="162" FontSize="20" Foreground="#FF940000" />
+            <Label Content="(*为必填项)" Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="69,14,0,0" Name="label4" VerticalAlignment="Top" Width="77" Foreground="Red" FontSize="11" />
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Images/groud.jpg" />
+            </Grid.Background>
+        </Grid>
+        <Border BorderBrush="#FF7C7676" BorderThickness="5" Height="306" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="491" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="294,22,0,0" Grid.Column="1" Grid.Row="1" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="GloryView.RFID.SystemManagement.AllUserLog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GloryView.RFID.PageControl"
+             xmlns:ut="clr-namespace:GloryView.RFID.User"
+             xmlns:nf="clr-namespace:GloryView.RFID.ReaderAndWriterClass"
+             xmlns:st="clr-namespace:GloryView.RFID.DeviceMigrations.DeviceClass"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885" xmlns:my="clr-namespace:GloryView.RFID">
+    <UserControl.Resources>
+        <ut:DateString x:Key="dateStr" />
+        <st:StatusConverter x:Key="statusStr" />
+        <ut:StringConverter  x:Key="userType"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="456*" />
+            <RowDefinition Height="46*" />
+        </Grid.RowDefinitions>
+        <Grid Height="47" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="133" />
+                <ColumnDefinition Width="222*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="roomName" VerticalAlignment="Top" Width="118" FontSize="16" BorderBrush="Black" Content="用户日记" />
+            <Label Content="用户名：" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="0,10,0,0" Name="label1" VerticalAlignment="Top" Width="59" FontSize="11" />
+            <TextBox Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="54,10,0,0" Name="textBox1" VerticalAlignment="Top" Width="116" />
+            <Label Content="起" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="176,11,0,0" Name="label2" VerticalAlignment="Top" Width="25" FontSize="11" />
+            <DatePicker Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="207,10,0,0" Name="datePicker1" VerticalAlignment="Top" Width="118" FontSize="11" />
+            <Label Content="到" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="329,11,0,0" Name="label3" VerticalAlignment="Top" Width="25" FontSize="11" />
+            <DatePicker Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="360,11,0,0" Name="datePicker2" VerticalAlignment="Top" Width="119" FontSize="11" />
+            <Button Content="搜 索" Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="486,11,0,0" Name="button1" VerticalAlignment="Top" Width="44" FontSize="11" />
+        </Grid>
+        <DataGrid Name="logGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" BorderThickness="0" HorizontalScrollBarVisibility="Auto" Opacity="1" VerticalContentAlignment="Center" FontSize="12" Grid.Row="1">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+            </DataGrid.Background>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--当鼠标经过时 改变颜色-->
+                            <Setter Property="Background" Value="SkyBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}" Visibility="Hidden" />
+                <DataGridTextColumn Header="帐 号" Width="80*" Binding="{Binding ACCOUNT}" />
+                <DataGridTextColumn Header="用户名" Width="80*" Binding="{Binding USER_NAME}"/>
+                <DataGridTextColumn Header="权 限" Width="80*" Binding="{Binding TYPE,Converter={StaticResource userType}}" />
+                <DataGridTextColumn Header="登录时间" Width="80*" Binding="{Binding LOGIN_TIME, Converter={StaticResource dateStr}}"/>
+                <DataGridTextColumn Header="退出时间" Width="80*" Binding="{Binding EXIT_TIME, Converter={StaticResource dateStr}}"/>
+                <DataGridTextColumn Header="创建时间" Width="80*" Binding="{Binding CREATE_TIME, Converter={StaticResource dateStr}}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <local:Pager x:Name="page" Background="#04000000" Grid.Row="2"></local:Pager>
+       </Grid>
+</UserControl>

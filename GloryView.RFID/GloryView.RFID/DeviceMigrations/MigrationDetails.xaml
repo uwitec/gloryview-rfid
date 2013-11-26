@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="GloryView.RFID.DeviceMigrations.MigrationDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignHeight="500" d:DesignWidth="700" x:Name="MigrationDetailsControl">
+    <Grid Background="#20000000">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*" />
+            <RowDefinition Height="425" />
+            <RowDefinition Height="31*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*" />
+            <ColumnDefinition Width="654" />
+            <ColumnDefinition Width="24*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/%255II5C%7d%7e%7eZ%7bQ%29PZA1NTC%7b%60B.jpg" />
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="168" />
+                <ColumnDefinition Width="486" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="65" />
+                <RowDefinition Height="0*" />
+            </Grid.RowDefinitions>
+            <Label Content="设备编号 32434234234" Height="39" HorizontalAlignment="Left" Name="label1" VerticalAlignment="Top" Width="650" FontSize="16" Grid.ColumnSpan="2" Margin="4,0,0,0">
+                <Label.Background>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/MBG.jpg" />
+                </Label.Background>
+            </Label>
+            <Border BorderBrush="Silver" BorderThickness="1,1,1,1" Grid.Row="1">
+                <Label Height="30" Name="label2" Width="151" FontSize="14" HorizontalContentAlignment="Right" Content="编 号" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,1,1,1" Grid.Column="1" Grid.Row="1">
+                <Label Content="32434234234" Height="27" Name="label9" Width="474" FontSize="14" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="2">
+                <Label Content="名 称" Height="31" Name="label3" Width="151" FontSize="14" HorizontalContentAlignment="Right" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Row="2" Grid.Column="1">
+                <Label Content="IBM服务器" Height="27" Name="label10" Width="474" FontSize="14" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="3">
+                <Label Content="类 别" FontSize="14" Height="31" HorizontalContentAlignment="Right" Name="label4" Width="151" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="3">
+                <Label Content="服务器" Height="27" Name="label11" Width="474" FontSize="14" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="4">
+                <Label Content="申请状态" FontSize="14" Height="31" HorizontalContentAlignment="Right" Name="label5" Width="151" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="4">
+                <Label Content="待审中..." Height="27" Name="label12" Width="474" FontSize="14" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="5">
+                <Label Content="审核用户" FontSize="14" Height="31" HorizontalContentAlignment="Right" Name="label6" Width="151" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="5">
+                <Label Content="admin" Height="27" Name="label13" Width="474" FontSize="14" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="6">
+                <Label Content="设备所属" FontSize="14" Height="31" HorizontalContentAlignment="Right" Name="label15" Width="151" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="6">
+                <Label Content="三号机房" FontSize="14" Height="27" Name="label16" Width="474" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="7">
+                <Label Content="迁移位置" FontSize="14" Height="31" HorizontalContentAlignment="Right" Name="label7" Width="151" />
+            </Border>
+            <Button Content="关   闭" Grid.Column="1" Grid.Row="9" Height="33" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Top" Width="91" Click="Close_MigrationDetails" Margin="207,21,0,0" />
+            <Button Grid.Row="9" Height="33" HorizontalAlignment="Left" Margin="5,21,0,0" Name="button2" VerticalAlignment="Top" Width="100" Grid.Column="1" Content="提  交" />
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Row="7" Grid.Column="1">
+                <Label FontSize="14" Height="27" Name="label14" Width="474" Content="二号机房" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="8">
+                <Label FontSize="14" Height="27" Name="label17" Width="474" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1,0,1,1" Grid.Row="8">
+                <Label Content="暂无" FontSize="14" Height="31" HorizontalContentAlignment="Right" Name="label8" Width="151" />
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="5" Height="425" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="654" Grid.RowSpan="10" Grid.ColumnSpan="2">
+                <Border.Background>
+                    <ImageBrush />
+                </Border.Background>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

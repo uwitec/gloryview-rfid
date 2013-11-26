@@ -1,0 +1,13 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GloryView.RFID;component/Themes/DazzleWindow.xaml" />
+        <ResourceDictionary Source="/GloryView.RFID;component/Themes/DazzleTabItem.xaml" />
+        <ResourceDictionary Source="/GloryView.RFID;component/Themes/DazzleTabControl.xaml" />
+        <ResourceDictionary Source="/GloryView.RFID;component/Themes/DazzleButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    
+    
+</ResourceDictionary>

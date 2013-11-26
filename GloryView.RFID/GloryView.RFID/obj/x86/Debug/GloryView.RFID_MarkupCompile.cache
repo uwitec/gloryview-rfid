@@ -1,0 +1,20 @@
+﻿GloryView.RFID
+
+
+winexe
+C#
+.cs
+E:\workplace\WPF\RFID\Source\GloryView.RFID\obj\x86\Debug\
+GloryView.RFID
+none
+false
+DEBUG;TRACE
+E:\workplace\WPF\RFID\Source\GloryView.RFID\App.xaml
+871079676206
+11-1931259968
+1521350979950
+26-477826692
+ChangePassword.xaml;ColorPickerDemo\ColorForm.xaml;ColorPickerDemo\Themes\Generic.xaml;DeviceMigrations\AddEquipment.xaml;DeviceMigrations\addposition.xaml;DeviceMigrations\AddReaderWrider.xaml;DeviceMigrations\addwindow.xaml;DeviceMigrations\Controls\DataPager.xaml;DeviceMigrations\Addserver.xaml;DeviceMigrations\Alterserver.xaml;DeviceMigrations\ApplyDevice.xaml;DeviceMigrations\Deleteserver.xaml;DeviceMigrations\DeviceMigration.xaml;DeviceMigrations\DeviceMove.xaml;DeviceMigrations\DevicePower.xaml;DeviceMigrations\EditEquipments.xaml;DeviceMigrations\EquipmentDelivery.xaml;DeviceMigrations\EquipmentInformation.xaml;DeviceMigrations\EquipmentReview.xaml;DeviceMigrations\Equipments .xaml;DeviceMigrations\EquipmentScrapping.xaml;DeviceMigrations\MigrationDetails.xaml;DeviceMigrations\motor.xaml;DeviceMigrations\NewEquipment.xaml;DeviceMigrations\OldEquipment.xaml;DeviceMigrations\RepairEquipment.xaml;DeviceMigrations\RequestDiscarding.xaml;DeviceMigrations\Review.xaml;DeviceMigrations\TakeDelivery.xaml;DeviceMigrations\TakeMove.xaml;DeviceMigrations\TakeRepair.xaml;DeviceMigrations\TakeRepairComing.xaml;DeviceMigrations\TakeScrapping.xaml;PageControl\JXMessageBox.xaml;PageControl\Pager.xaml;PageControl\T4PopupControl.xaml;PrintDocument\Export_Window.xaml;RoomManagement\AddDeviceClass.xaml;RoomManagement\AddEquipment.xaml;RoomManagement\AddRecycleLabels.xaml;RoomManagement\AddRoom.xaml;RoomManagement\AddRooms.xaml;RoomManagement\Alarm.xaml;RoomManagement\AlarmDetails.xaml;RoomManagement\AssetInventory.xaml;RoomManagement\DeviceClass .xaml;RoomManagement\DeviceList.xaml;RoomManagement\EditDeviceClass.xaml;RoomManagement\EditEquipment.xaml;RoomManagement\EditRoom.xaml;RoomManagement\EditWriteAndReader.xaml;RoomManagement\EquipmentList.xaml;RoomManagement\EquipmentsDetails.xaml;RoomManagement\HistoryAlarm.xaml;RoomManagement\HistoryEquipment.xaml;RoomManagement\HistoryEquipmentDetails.xaml;RoomManagement\RecycleLabels.xaml;RoomManagement\Room.xaml;RoomManagement\RoomDetails.xaml;RoomManagement\Statement.xaml;RoomManagement\TreatmentAlarm.xaml;RoomManagement\WriteAndReaderInfo.xaml;SystemManagement\AlarmSetting.xaml;SystemManagement\BackupCycleSetting.xaml;SystemManagement\DataSecurity .xaml;SystemManagement\MovedDevicesLog.xaml;SystemManagement\OperationEquipmentInfo.xaml;SystemManagement\SystemSetting.xaml;SystemManagement\AllUserLog.xaml;UserManager.IU\ActionLog.xaml;UserManager.IU\Add.xaml;UserManager.IU\AddAdmin.xaml;UserManager.IU\AddUser.xaml;UserManager.IU\AddUsers.xaml;UserManager.IU\ChangePaw.xaml;UserManager.IU\DoAddUser.xaml;UserManager.IU\EditPower.xaml;MainForm.xaml;MainWindow.xaml;Themes\DazzleButton.xaml;Themes\DazzleTabControl.xaml;Themes\DazzleTabItem.xaml;Themes\DazzleWindow.xaml;Themes\Generic.xaml;UserManager.IU\EditUser.xaml;UserManager.IU\LoginLog.xaml;UserManager.IU\Show.xaml;
+
+False
+

@@ -1,0 +1,89 @@
+﻿<Window x:Class="GloryView.RFID.DeviceMigrations.AddEquipment"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ut="clr-namespace:GloryView.RFID.User"
+        xmlns:st="clr-namespace:GloryView.RFID.DeviceMigrations.DeviceClass"
+        mc:Ignorable="d"
+        Title="添加新设备"   WindowStartupLocation="CenterOwner"
+        AllowsTransparency="False" WindowStyle="ToolWindow"
+        ShowInTaskbar="False" Background="#02000000" Foreground="#FFAC0000"
+        Height="300" Width="550" FontSize="12" WindowState="Normal" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="137*" />
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="137*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="22" />
+            <RowDefinition Height="19*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/%255II5C%7d%7e%7eZ%7bQ%29PZA1NTC%7b%60B.jpg" />
+        </Grid.Background>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0,1,0">
+            <TextBlock Background="White" Padding="5" Name="numberStr" />
+            
+        </Border>
+        <Label Name="ID" Visibility="Hidden" Content="" />
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="1">
+            <Label Content="设备编号：" HorizontalContentAlignment="Right">
+                <Label.Background>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/%255II5C%7d%7e%7eZ%7bQ%29PZA1NTC%7b%60B.jpg" />
+                </Label.Background>
+            </Label>
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="2">
+            <Label Content="名  称：" HorizontalContentAlignment="Right">
+                <Label.Background>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/%255II5C%7d%7e%7eZ%7bQ%29PZA1NTC%7b%60B.jpg" />
+                </Label.Background>
+            </Label>
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,0,1,0">
+            <TextBox Background="White" Padding="5" Name="equipName" />
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Row="3">
+            <Label Content="设备类别：" HorizontalContentAlignment="Right">
+                <Label.Background>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/%255II5C%7d%7e%7eZ%7bQ%29PZA1NTC%7b%60B.jpg" />
+                </Label.Background>
+            </Label>
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3">
+            <Label Background="White" />
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,1" Grid.Row="4">
+            <Label Content="机  房：" HorizontalContentAlignment="Right">
+                <Label.Background>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Images/user/%255II5C%7d%7e%7eZ%7bQ%29PZA1NTC%7b%60B.jpg" />
+                </Label.Background>
+            </Label>
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="1,1,0,0" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3">
+            <Label Background="White"></Label>
+        </Border>
+        <Border BorderBrush="#FFB4ADAD" BorderThickness="1" Grid.ColumnSpan="4" Height="1" HorizontalAlignment="Left" Margin="12,64,0,0" Name="border1" VerticalAlignment="Top" Width="504" />
+        <Label Name="title" Grid.ColumnSpan="4" Foreground="#FFC20000" FontSize="20">
+            <Label.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" />
+            </Label.Background>
+        </Label>
+        <ComboBox Grid.Column="1" Grid.Row="3" Height="24" HorizontalAlignment="Left" Margin="4,4,0,0"  Name="typeBox" VerticalAlignment="Top" Width="147" FontSize="11" />
+        <ComboBox Grid.Column="1" Grid.Row="4" Height="24" HorizontalAlignment="Left" Margin="4,4,0,0" Name="roomBox" VerticalAlignment="Top" Width="147" FontSize="11"/>
+        <Button Content="提  交" Grid.Column="1" Grid.Row="5" Grid.RowSpan="2" Click="Submit_Add"  Height="25" HorizontalAlignment="Left" Margin="-1,27,0,0" Name="add" VerticalAlignment="Top" Width="75" FontSize="11" />
+        <Button Content="取  消" Grid.Column="3" Grid.Row="5" Height="24" HorizontalAlignment="Left" Margin="0,27,0,0" Click="Close_Add"  Name="button1" VerticalAlignment="Top" Width="75" Grid.RowSpan="2" FontSize="11" />
+        <Image Height="46" HorizontalAlignment="Left" Margin="12,8,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="60" Source="/GloryView.RFID;component/Images/user/add.png" />
+        <Label Content="新设备信息录入" Grid.ColumnSpan="2" Height="40" HorizontalAlignment="Left" Margin="67,18,0,0" Name="label1" VerticalAlignment="Top" Width="178" FontSize="18" Background="{x:Null}" Foreground="#FF840000" />
+    </Grid>
+</Window>
+

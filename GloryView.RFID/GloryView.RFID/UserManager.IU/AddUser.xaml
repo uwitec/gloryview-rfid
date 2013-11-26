@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="GloryView.RFID.AddUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GloryView.RFID.PageControl"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ut="clr-namespace:GloryView.RFID.User"
+            mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885">
+    
+    <UserControl.Resources>
+        <ut:StringConverter  x:Key="userType"/>
+        <ut:StatusConverter x:Key="userStatus" />
+        <ut:DateString x:Key="dateStr" />
+    </UserControl.Resources>
+    <Grid x:Name="add_user">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45" />
+            <RowDefinition Height="467*" />
+            <RowDefinition Height="38" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190*" />
+        </Grid.ColumnDefinitions>
+        <Grid Height="45" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230" />
+                <ColumnDefinition Width="519" />
+                <ColumnDefinition Width="136*" />
+            </Grid.ColumnDefinitions>
+            <Label Content="用户管理" Height="36" HorizontalAlignment="Left" Margin="77,10,0,0" Name="label1" VerticalAlignment="Top" Width="146" FontSize="20" Foreground="White" />
+            <Label Content="帐  号:" Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="10,15,0,0" Name="label2" VerticalAlignment="Top" Width="52" FontSize="12" HorizontalContentAlignment="Right" Foreground="White" />
+            <TextBox Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="63,16,0,0" Name="queryAccount" VerticalAlignment="Top" Width="124" />
+            <Label Content="姓  名:" Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="189,15,0,0" Name="label3" VerticalAlignment="Top" Width="46" FontSize="12" HorizontalContentAlignment="Right" Foreground="#FFFFFCFC" />
+            <TextBox Grid.Column="1" Height="25" HorizontalAlignment="Right" Margin="0,16,165,0" Name="queryName" VerticalAlignment="Top" Width="119" />
+            <TextBlock Grid.Column="1" Margin="452,17,24,3" TextWrapping="Wrap">
+                <Hyperlink Name="Details"  TextDecorations="{x:Null}" Click="AddUser_Click" >
+                     <Image Source="/GloryView.RFID;component/Images/user/AddUser.png"  ToolTip="新增用户" />
+                </Hyperlink>
+            </TextBlock>
+            <Image Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="72" Source="/GloryView.RFID;component/Images/user/managerUsers.png" />
+            <TextBlock Grid.Column="1" Height="25" Margin="361,17,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="25">
+                <Hyperlink TextDecorations="{x:Null}" Click="QueryUser" >
+                     <Image Source="/GloryView.RFID;component/Images/user/search.png"  ToolTip="搜索" />
+                </Hyperlink>
+            </TextBlock>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Images/UIImage/logBG.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,2,32" ViewportUnits="Absolute" />
+            </Grid.Background>
+        </Grid>
+        <local:Pager Grid.Row="2" x:Name="page" Background="{x:Null}"></local:Pager>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Images/groud.jpg" />
+            </Grid.Background>
+            <DataGrid AutoGenerateColumns="False" Name="userData" CanUserAddRows="False" FontSize="12" IsReadOnly="True" BorderThickness="0" HorizontalScrollBarVisibility="Auto" Opacity="1" Background="{x:Null}" HorizontalGridLinesBrush="#71000000">
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Background" Value="LightBlue" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <!--当鼠标经过时 改变颜色-->
+                                <Setter Property="Background" Value="SkyBlue" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Width="30*" Binding="{Binding ID}" Visibility="Hidden" />
+                    <DataGridTextColumn Header="帐 号" Width="100*" Binding="{Binding ACCOUNT}" />
+                    <DataGridTextColumn Header="姓 名" Width="100*" Binding="{Binding USER_NAME}" />
+                    <DataGridTextColumn Header="联系电话" Width="100*" Binding="{Binding PHONE}" />
+                    <DataGridTextColumn Header="权 限" Width="100*" Binding="{Binding TYPE,Converter={StaticResource userType}}" />
+                    <DataGridTextColumn Header="状 态" Width="100*" Binding="{Binding STATUS,Converter={StaticResource userStatus}}" />
+                    <DataGridTextColumn Header="创建者" Width="100*" Binding="{Binding NAME}" />
+                    <DataGridTextColumn Header="最近登陆时间" Width="100*" Binding="{Binding LOGIN_TIME,Converter={StaticResource dateStr}}" />
+                    <DataGridTemplateColumn Header="操 作" Width="100*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Name="navigateTextBlock" Margin="14,0,0,5" Grid.Row="1" FontSize="11" TextWrapping="Wrap" Foreground="Yellow">
+                               
+                                 <Hyperlink Name="Details" TextDecorations="{x:Null}" Click="Edit_User">
+                                   <Image Source="/GloryView.RFID;component/Images/user/editUser.png" Width="25" Height="18" ToolTip="编辑用户信息" />
+                               </Hyperlink></TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+                <DataGrid.AlternatingRowBackground>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Images/groud.jpg" />
+                </DataGrid.AlternatingRowBackground>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

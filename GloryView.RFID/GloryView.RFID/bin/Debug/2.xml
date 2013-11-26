@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="GB2312"?>
+<Room>
+  <RoomNo Name="一号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3, 6, 19.8</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,6,0.3</SizeParam>
+        <Position>0,0.2,19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,6,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4.8,9.5</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,2.2,19.8</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4.8,9.5</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,3.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,3.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="2" Position="-30,0.2,14,90" Sum="4">
+        <Server RFID="3" Position="10" Type="6" />
+        <Server RFID="4" Position="20" Type="4" />
+        <Server RFID="6" Position="30" Type="1" />
+      </Cabinet>
+      <Cabinet RFID="7" Position="-22,0.2,14,90" Sum="4">
+        <Server RFID="9" Position="4" Type="4" />
+        <Server RFID="10" Position="10" Type="6" />
+        <Server RFID="11" Position="30" Type="1" />
+        <Server RFID="12" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="13" Position="-14,0.2,14,90" Sum="1">
+        <Server RFID="15" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="16" Position="-6,0.2,14,90" Sum="2">
+        <Server RFID="18" Position="4" Type="4" />
+        <Server RFID="19" Position="10" Type="6" />
+        <Server RFID="20" Position="25" Type="6" />
+        <Server RFID="21" Position="33" Type="3" />
+      </Cabinet>
+      <Cabinet RFID="23" Position="2,0.2,14,90" Sum="5">
+        <Server RFID="25" Position="4" Type="4" />
+        <Server RFID="26" Position="10" Type="6" />
+        <Server RFID="27" Position="20" Type="4" />
+        <Server RFID="28" Position="30" Type="1" />
+        <Server RFID="29" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="30" Position="10,0.2,14,90" Sum="5">
+        <Server RFID="32" Position="4" Type="4" />
+        <Server RFID="33" Position="10" Type="6" />
+        <Server RFID="34" Position="20" Type="4" />
+        <Server RFID="35" Position="30" Type="1" />
+        <Server RFID="36" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="37" Position="18,0.2,14,90" Sum="5">
+        <Server RFID="39" Position="4" Type="4" />
+        <Server RFID="40" Position="10" Type="6" />
+        <Server RFID="41" Position="20" Type="4" />
+        <Server RFID="42" Position="30" Type="1" />
+        <Server RFID="43" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="44" Position="26,0.2,14,90">
+      </Cabinet>
+      <Cabinet RFID="45" Position="10,0.2,14,90" Sum="5">
+        <Server RFID="47" Position="4" Type="4" />
+        <Server RFID="48" Position="10" Type="6" />
+        <Server RFID="49" Position="20" Type="4" />
+        <Server RFID="50" Position="30" Type="1" />
+        <Server RFID="51" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="76" Position="-30,0.2,8,90" Sum="5">
+        <Server RFID="77" Position="4" Type="4" />
+        <Server RFID="78" Position="10" Type="6" />
+        <Server RFID="79" Position="20" Type="4" />
+        <Server RFID="80" Position="30" Type="1" />
+        <Server RFID="81" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="82" Position="-22,0.2,8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="83" Position="-14,0.2,8,90" Sum="5">
+        <Server RFID="85" Position="4" Type="4" />
+        <Server RFID="86" Position="10" Type="6" />
+        <Server RFID="87" Position="20" Type="4" />
+        <Server RFID="88" Position="30" Type="1" />
+        <Server RFID="89" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="97" Position="-6,0.2,8,90" Sum="5">
+        <Server RFID="99" Position="4" Type="4" />
+        <Server RFID="100" Position="10" Type="6" />
+        <Server RFID="101" Position="20" Type="4" />
+        <Server RFID="102" Position="30" Type="1" />
+        <Server RFID="103" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="104" Position="2,0.2,8,90" Sum="1">
+        <Server RFID="105" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="114" Position="10,0.2,8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="115" Position="18,0.2,8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="116" Position="26,0.2,8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="145" Position="-30,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="146" Position="-22,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="147" Position="-14,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="148" Position="-6,0.2,-8,90" Sum="0">
+        <Server RFID="1" Position="4" Type="6" />
+      </Cabinet>
+      <Cabinet RFID="149" Position="2,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="150" Position="10,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="160" Position="18,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="161" Position="26,0.2,-8,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="167" Position="-30,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="168" Position="-22,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="169" Position="-14,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="170" Position="-6,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="171" Position="2,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="172" Position="10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="173" Position="18,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="174" Position="26,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="180" Position="-34,0.2,13,90" />
+      <Air RFID="181" Position="-34,0.2,17,90" />
+      <Air RFID="182" Position="-34,0.2,-17,90" />
+      <Air RFID="183" Position="34,0.2,17,-90" />
+      <Air RFID="184" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="二号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="131" Position="-20,0.2,14,90" Sum="1">
+        <Server RFID="151" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="161" Position="-15,0.2,14,90" Sum="2">
+        <Server RFID="181" Position="4" Type="4" />
+        <Server RFID="191" Position="10" Type="6" />
+      </Cabinet>
+      <Cabinet RFID="231" Position="-10,0.2,14,90" Sum="5">
+        <Server RFID="251" Position="4" Type="4" />
+        <Server RFID="261" Position="10" Type="6" />
+        <Server RFID="271" Position="20" Type="4" />
+        <Server RFID="281" Position="30" Type="1" />
+        <Server RFID="291" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="301" Position="-5,0.2,14,90" Sum="5">
+        <Server RFID="321" Position="4" Type="4" />
+        <Server RFID="331" Position="10" Type="6" />
+        <Server RFID="341" Position="20" Type="4" />
+        <Server RFID="351" Position="30" Type="1" />
+        <Server RFID="361" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="371" Position="0,0.2,14,90" Sum="5">
+        <Server RFID="391" Position="4" Type="4" />
+        <Server RFID="401" Position="10" Type="6" />
+        <Server RFID="411" Position="20" Type="4" />
+        <Server RFID="421" Position="30" Type="1" />
+        <Server RFID="431" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="441" Position="5,0.2,14,90">
+      </Cabinet>
+      <Cabinet RFID="451" Position="10,0.2,14,90" Sum="5">
+        <Server RFID="471" Position="4" Type="4" />
+        <Server RFID="481" Position="10" Type="6" />
+        <Server RFID="491" Position="20" Type="4" />
+        <Server RFID="501" Position="30" Type="1" />
+        <Server RFID="511" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="521" Position="15,0.2,14,90" Sum="5">
+        <Server RFID="541" Position="4" Type="4" />
+        <Server RFID="551" Position="10" Type="6" />
+        <Server RFID="561" Position="20" Type="4" />
+        <Server RFID="571" Position="30" Type="1" />
+        <Server RFID="581" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="591" Position="20,0.2,14,90" Sum="5">
+        <Server RFID="611" Position="4" Type="4" />
+        <Server RFID="621" Position="10" Type="6" />
+        <Server RFID="631" Position="20" Type="4" />
+        <Server RFID="641" Position="30" Type="1" />
+        <Server RFID="651" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="831" Position="-20,0.2,9,90" Sum="5">
+        <Server RFID="851" Position="4" Type="4" />
+        <Server RFID="861" Position="10" Type="6" />
+        <Server RFID="871" Position="20" Type="4" />
+        <Server RFID="881" Position="30" Type="1" />
+        <Server RFID="891" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="901" Position="-15,0.2,9,90" Sum="5">
+        <Server RFID="921" Position="4" Type="4" />
+        <Server RFID="931" Position="10" Type="6" />
+        <Server RFID="941" Position="20" Type="4" />
+        <Server RFID="951" Position="30" Type="1" />
+        <Server RFID="961" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="971" Position="-10,0.2,9,90" Sum="5">
+        <Server RFID="991" Position="4" Type="4" />
+        <Server RFID="1001" Position="10" Type="6" />
+        <Server RFID="1011" Position="20" Type="4" />
+        <Server RFID="1021" Position="30" Type="1" />
+        <Server RFID="1031" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="1041" Position="-5,0.2,9,90" Sum="1">
+        <Server RFID="1051" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="1061" Position="0,0.2,9,90" Sum="1">
+        <Server RFID="1071" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="1081" Position="5,0.2,9,90" Sum="5">
+      </Cabinet>
+      <Cabinet RFID="1141" Position="10,0.2,9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1151" Position="15,0.2,9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1161" Position="20,0.2,9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1211" Position="-20,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1221" Position="-15,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1231" Position="-10,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1241" Position="-5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1251" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1261" Position="5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1271" Position="10,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1281" Position="15,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1291" Position="20,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1341" Position="-20,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1351" Position="-15,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1361" Position="-10,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1371" Position="-5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1381" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1391" Position="5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1401" Position="10,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1411" Position="15,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1421" Position="20,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1471" Position="-20,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1481" Position="-15,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1491" Position="-10,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1501" Position="-5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1601" Position="0,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1611" Position="5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1621" Position="10,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1631" Position="15,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1641" Position="20,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1691" Position="-20,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1701" Position="-15,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1711" Position="-10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1721" Position="-5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1731" Position="0,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1741" Position="5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1751" Position="10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1761" Position="15,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="1771" Position="20,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="1801" Position="-34,0.2,13,90" />
+      <Air RFID="1811" Position="-34,0.2,17,90" />
+      <Air RFID="1821" Position="-34,0.2,-17,90" />
+      <Air RFID="1831" Position="34,0.2,17,-90" />
+      <Air RFID="1841" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="三号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="2310" Position="-10,0.2,14,90" Sum="5">
+        <Server RFID="2510" Position="4" Type="4" />
+        <Server RFID="2610" Position="10" Type="6" />
+        <Server RFID="2710" Position="20" Type="4" />
+        <Server RFID="2810" Position="30" Type="1" />
+        <Server RFID="2910" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="3010" Position="-5,0.2,14,90" Sum="5">
+        <Server RFID="3210" Position="4" Type="4" />
+        <Server RFID="3310" Position="10" Type="6" />
+        <Server RFID="3410" Position="20" Type="4" />
+        <Server RFID="3510" Position="30" Type="1" />
+        <Server RFID="3610" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="3710" Position="0,0.2,14,90" Sum="5">
+        <Server RFID="3910" Position="4" Type="4" />
+        <Server RFID="4010" Position="10" Type="6" />
+        <Server RFID="4110" Position="20" Type="4" />
+        <Server RFID="4210" Position="30" Type="1" />
+        <Server RFID="4310" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="4410" Position="5,0.2,14,90">
+      </Cabinet>
+      <Cabinet RFID="4510" Position="10,0.2,14,90" Sum="5">
+        <Server RFID="4710" Position="4" Type="4" />
+        <Server RFID="4810" Position="10" Type="6" />
+        <Server RFID="4910" Position="20" Type="4" />
+        <Server RFID="5010" Position="30" Type="1" />
+        <Server RFID="5110" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="9710" Position="-10,0.2,9,90" Sum="5">
+        <Server RFID="9910" Position="4" Type="4" />
+        <Server RFID="10010" Position="10" Type="6" />
+        <Server RFID="10110" Position="20" Type="4" />
+        <Server RFID="10210" Position="30" Type="1" />
+        <Server RFID="10310" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10410" Position="-5,0.2,9,90" Sum="1">
+        <Server RFID="10510" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10610" Position="0,0.2,9,90" Sum="1">
+        <Server RFID="10710" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10810" Position="5,0.2,9,90" Sum="5">
+      </Cabinet>
+      <Cabinet RFID="11410" Position="10,0.2,9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12310" Position="-10,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12410" Position="-5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12510" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12610" Position="5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12710" Position="10,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13610" Position="-10,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13710" Position="-5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13810" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13910" Position="5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="14010" Position="10,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="14910" Position="-10,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="15010" Position="-5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16010" Position="0,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16110" Position="5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16210" Position="10,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17110" Position="-10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17210" Position="-5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17310" Position="0,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17410" Position="5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17510" Position="10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="18010" Position="-34,0.2,13,90" />
+      <Air RFID="18110" Position="-34,0.2,17,90" />
+      <Air RFID="18210" Position="-34,0.2,-17,90" />
+      <Air RFID="18310" Position="34,0.2,17,-90" />
+      <Air RFID="18410" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="四号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="1611" Position="-15,0.2,14,90" Sum="2">
+        <Server RFID="1811" Position="4" Type="4" />
+        <Server RFID="1911" Position="10" Type="6" />
+        <Server RFID="500011" Position="25" Type="6" />
+        <Server RFID="88811" Position="33" Type="3" />
+      </Cabinet>
+      <Cabinet RFID="2311" Position="-10,0.2,14,90" Sum="5">
+        <Server RFID="2511" Position="4" Type="4" />
+        <Server RFID="2611" Position="10" Type="6" />
+        <Server RFID="2711" Position="20" Type="4" />
+        <Server RFID="2811" Position="30" Type="1" />
+        <Server RFID="2911" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="3011" Position="-5,0.2,14,90" Sum="5">
+        <Server RFID="3211" Position="4" Type="4" />
+        <Server RFID="3311" Position="10" Type="6" />
+        <Server RFID="3411" Position="20" Type="4" />
+        <Server RFID="3511" Position="30" Type="1" />
+        <Server RFID="3611" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="3711" Position="0,0.2,14,90" Sum="5">
+        <Server RFID="3911" Position="4" Type="4" />
+        <Server RFID="4011" Position="10" Type="6" />
+        <Server RFID="4111" Position="20" Type="4" />
+        <Server RFID="4211" Position="30" Type="1" />
+        <Server RFID="4311" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="441" Position="5,0.2,14,90">
+      </Cabinet>
+      <Cabinet RFID="4511" Position="10,0.2,14,90" Sum="5">
+        <Server RFID="4711" Position="4" Type="4" />
+        <Server RFID="4811" Position="10" Type="6" />
+        <Server RFID="4911" Position="20" Type="4" />
+        <Server RFID="5011" Position="30" Type="1" />
+        <Server RFID="5111" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="5211" Position="15,0.2,14,90" Sum="5">
+        <Server RFID="5411" Position="4" Type="4" />
+        <Server RFID="5511" Position="10" Type="6" />
+        <Server RFID="5611" Position="20" Type="4" />
+        <Server RFID="5711" Position="30" Type="1" />
+        <Server RFID="5811" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="9011" Position="-15,0.2,9,90" Sum="5">
+        <Server RFID="9211" Position="4" Type="4" />
+        <Server RFID="9311" Position="10" Type="6" />
+        <Server RFID="9411" Position="20" Type="4" />
+        <Server RFID="9511" Position="30" Type="1" />
+        <Server RFID="9611" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="9711" Position="-10,0.2,9,90" Sum="5">
+        <Server RFID="9911" Position="4" Type="4" />
+        <Server RFID="10011" Position="10" Type="6" />
+        <Server RFID="10111" Position="20" Type="4" />
+        <Server RFID="10211" Position="30" Type="1" />
+        <Server RFID="10311" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="1041" Position="-5,0.2,9,90" Sum="1">
+        <Server RFID="1051" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10611" Position="0,0.2,9,90" Sum="1">
+        <Server RFID="10711" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10811" Position="5,0.2,9,90" Sum="5">
+      </Cabinet>
+      <Cabinet RFID="11411" Position="10,0.2,9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="11511" Position="15,0.2,9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12211" Position="-15,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12311" Position="-10,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12411" Position="-5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12511" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12611" Position="5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12711" Position="10,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12811" Position="15,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13511" Position="-15,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13611" Position="-10,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13711" Position="-5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13811" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13911" Position="5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="14011" Position="10,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="14111" Position="15,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="14811" Position="-15,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="14911" Position="-10,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="15011" Position="-5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16011" Position="0,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16111" Position="5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16211" Position="10,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16311" Position="15,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17011" Position="-15,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17111" Position="-10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17211" Position="-5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17311" Position="0,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17411" Position="5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17511" Position="10,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17611" Position="15,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="18011" Position="-34,0.2,13,90" />
+      <Air RFID="18111" Position="-34,0.2,17,90" />
+      <Air RFID="18211" Position="-34,0.2,-17,90" />
+      <Air RFID="18311" Position="34,0.2,17,-90" />
+      <Air RFID="18411" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="五号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="3012" Position="-5,0.2,14,90" Sum="5">
+        <Server RFID="3212" Position="4" Type="4" />
+        <Server RFID="3312" Position="10" Type="6" />
+        <Server RFID="3412" Position="20" Type="4" />
+        <Server RFID="3512" Position="30" Type="1" />
+        <Server RFID="3612" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="3712" Position="0,0.2,14,90" Sum="5">
+        <Server RFID="3912" Position="4" Type="4" />
+        <Server RFID="4012" Position="10" Type="6" />
+        <Server RFID="4112" Position="20" Type="4" />
+        <Server RFID="4212" Position="30" Type="1" />
+        <Server RFID="4312" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="4412" Position="5,0.2,14,90">
+      </Cabinet>
+      <Cabinet RFID="10412" Position="-5,0.2,9,90" Sum="1">
+        <Server RFID="10512" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10612" Position="0,0.2,9,90" Sum="1">
+        <Server RFID="010712" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10812" Position="5,0.2,9,90" Sum="5">
+      </Cabinet>
+      <Cabinet RFID="12412" Position="-5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12512" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="12612" Position="5,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13712" Position="-5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13812" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13912" Position="5,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="15012" Position="-5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16012" Position="0,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16112" Position="5,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17212" Position="-5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17312" Position="0,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17412" Position="5,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="18012" Position="-34,0.2,13,90" />
+      <Air RFID="18112" Position="-34,0.2,17,90" />
+      <Air RFID="18212" Position="-34,0.2,-17,90" />
+      <Air RFID="18312" Position="34,0.2,17,-90" />
+      <Air RFID="18412" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="六号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="3713" Position="0,0.2,14,90" Sum="5">
+        <Server RFID="3913" Position="4" Type="4" />
+        <Server RFID="4013" Position="10" Type="6" />
+        <Server RFID="4113" Position="20" Type="4" />
+        <Server RFID="4213" Position="30" Type="1" />
+        <Server RFID="4313" Position="35" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="10613" Position="0,0.2,9,90" Sum="1">
+        <Server RFID="10713" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="12513" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13813" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16013" Position="0,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="17313" Position="0,0.2,-14,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="18013" Position="-34,0.2,13,90" />
+      <Air RFID="18113" Position="-34,0.2,17,90" />
+      <Air RFID="18213" Position="-34,0.2,-17,90" />
+      <Air RFID="18313" Position="34,0.2,17,-90" />
+      <Air RFID="18413" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="七号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="10614" Position="0,0.2,9,90" Sum="1">
+        <Server RFID="10714" Position="4" Type="4" />
+      </Cabinet>
+      <Cabinet RFID="12514" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13814" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="16014" Position="0,0.2,-9,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="18014" Position="-34,0.2,13,90" />
+      <Air RFID="18114" Position="-34,0.2,17,90" />
+      <Air RFID="18214" Position="-34,0.2,-17,90" />
+      <Air RFID="18314" Position="34,0.2,17,-90" />
+      <Air RFID="18414" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="八号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Cabinet RFID="12514" Position="0,0.2,4,90" Sum="0">
+      </Cabinet>
+      <Cabinet RFID="13814" Position="0,0.2,-4,90" Sum="0">
+      </Cabinet>
+      <Ups RFID="18014" Position="-34,0.2,13,90" />
+      <Air RFID="18114" Position="-34,0.2,17,90" />
+      <Air RFID="18214" Position="-34,0.2,-17,90" />
+      <Air RFID="18314" Position="34,0.2,17,-90" />
+      <Air RFID="18414" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="九号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+      <Ups RFID="18015" Position="-34,0.2,13,90" />
+      <Air RFID="18115" Position="-34,0.2,17,90" />
+      <Air RFID="18215" Position="-34,0.2,-17,90" />
+      <Air RFID="18315" Position="34,0.2,17,-90" />
+      <Air RFID="18415" Position="34,0.2,-17,-90" />
+    </Device>
+  </RoomNo>
+  <RoomNo Name="十号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>36,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,4,20</SizeParam>
+        <Position>-35.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>36,4,0.3</SizeParam>
+        <Position>0,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,10.4</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,0.2,20</SizeParam>
+        <Position>35.6,4,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3.8,9.6</SizeParam>
+        <Position>35.6,0.2,-10.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,-3.4</Position>
+      </Shape>
+      <Shape Name="Inwall">
+        <SizeParam>3,2.5,0.3</SizeParam>
+        <Position>32,0.2,3.4</Position>
+      </Shape>
+    </Ground>
+    <Device>
+    </Device>
+  </RoomNo>
+  <RoomNo Name="十一号机房">
+    <Ground>
+      <Shape Name="Floor">
+        <SizeParam>15,0.2,20</SizeParam>
+        <Position>0,0,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3,20</SizeParam>
+        <Position>-14.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>0.3,3,20</SizeParam>
+        <Position>14.6,0.2,0</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>15,3,0.3</SizeParam>
+        <Position>0,0.2,19.8</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>7,2.5,0.3</SizeParam>
+        <Position>8,0.2,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>15,0.5,0.3</SizeParam>
+        <Position>0,2.7,-19.6</Position>
+      </Shape>
+      <Shape Name="Outwall">
+        <SizeParam>7,2.5,0.3</SizeParam>
+        <Position>-8,0.2,-19.6</Position>
+      </Shape>
+    </Ground>
+    <Device>
+    </Device>
+  </RoomNo>
+</Room>

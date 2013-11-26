@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="GloryView.RFID.RoomManagement.AssetInventory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885">
+    <Grid>
+        <Grid Height="47" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="133" />
+                <ColumnDefinition Width="421" />
+                <ColumnDefinition Width="331*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="roomName" VerticalAlignment="Top" Width="118" FontSize="16" BorderBrush="Black" />
+            <Label Content="类  别：" Grid.Column="1" Height="29" HorizontalAlignment="Left" Margin="0,11,0,0" Name="label2" VerticalAlignment="Top" Width="48" FontSize="12" Background="{x:Null}" />
+            <Label Content="编 号：" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="184,11,0,0" Name="label3" VerticalAlignment="Top" Width="51" FontSize="12" />
+            <TextBox Grid.Column="1" Height="25" HorizontalAlignment="Right" Margin="0,13,69,0" Name="textBox2" VerticalAlignment="Top" Width="119" />
+            <Button Content="搜  索" Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="362,13,0,0" Name="button1" VerticalAlignment="Top" Width="56" FontSize="11" />
+            <ComboBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="48,13,0,0" Name="comboBox1" VerticalAlignment="Top" Width="135" FontSize="11">
+                <ComboBoxItem Content="所有..." />
+                <ComboBoxItem Content="服务器" />
+                <ComboBoxItem Content="机柜" />
+                <ComboBoxItem Content="电脑" />
+                <ComboBoxItem Content="空调" />
+            </ComboBox>
+        </Grid>
+        <DataGrid Margin="0,48,0,1" Name="dataGrid1">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+            </DataGrid.Background>
+        </DataGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="GloryView.RFID.DeviceMigrations.RequestDiscarding"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignHeight="500" d:DesignWidth="855">
+    <Grid x:Name="apply_device">
+        
+        <Grid Height="47" VerticalAlignment="Top" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="126" />
+                <ColumnDefinition Width="377" />
+                <ColumnDefinition Width="352*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Content="设备状态申请" Height="37" HorizontalAlignment="Left" Margin="6,10,0,0" Name="label1" VerticalAlignment="Top" Width="113" FontSize="16" />
+            <Label Content="编 号：" Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label2" VerticalAlignment="Top" Width="48" FontSize="11" />
+            <TextBox Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="54,14,0,0" Name="textBox1" VerticalAlignment="Top" Width="108" />
+            <ComboBox Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="203,14,0,0" Name="comboBox1" VerticalAlignment="Top" Width="100" FontSize="11">
+                <ComboBoxItem Content="所有..." IsSelected="True" />
+                <ComboBoxItem Content="一号机房" />
+                <ComboBoxItem Content="二号机房" />
+                <ComboBoxItem Content="三号机房" />
+            </ComboBox>
+            <Label Content="机房：" Grid.Column="1" Height="26" HorizontalAlignment="Left" Margin="168,13,0,0" Name="label3" VerticalAlignment="Top" Width="43" FontSize="11" />
+            <Button Content="搜 索" Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="309,15,0,0" Name="button1" VerticalAlignment="Top" Width="49" FontSize="11" />
+        </Grid>
+        <DataGrid AutoGenerateColumns="False" Margin="0,46,0,-45">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Images/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="" Width="5" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="编 号" Width="100*" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="类 型" Width="100*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="状 态" Width="100*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="机 房" Width="100*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="入库时间" Width="100*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="操 作" Width="100*" Binding="{Binding Name}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="1231232323" Height="28" HorizontalAlignment="Left" Margin="27,73,0,0" Name="label5" VerticalAlignment="Top" Width="99" />
+        <Label Content="服务器" Height="28" HorizontalAlignment="Left" Margin="167,73,0,0" Name="label6" VerticalAlignment="Top" Width="99" />
+        <Label Content="正常" Height="28" HorizontalAlignment="Left" Margin="307,73,0,0" Name="label7" VerticalAlignment="Top" Width="99" />
+        <Label Content="二号机房" Height="28" HorizontalAlignment="Left" Margin="443,73,0,0" Name="label8" VerticalAlignment="Top" Width="99" />
+        <Label Content="2013-08-23" Height="28" HorizontalAlignment="Left" Margin="580,73,0,0" Name="label9" VerticalAlignment="Top" Width="99" />
+        <Button Content="申  请" Height="27" HorizontalAlignment="Left" Margin="718,74,0,0" Name="button2" VerticalAlignment="Top" Width="89" FontSize="11" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="0" Padding="0" Click="Apply" />
+    </Grid>
+</UserControl>

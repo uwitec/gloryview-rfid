@@ -1,0 +1,1 @@
+﻿mysqldump -hlocalhost -P3306 -uroot -p123 --default-character-set=utf8 mydata > d:\test\mydata.sql

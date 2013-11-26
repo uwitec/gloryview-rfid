@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="GloryView.RFID.RoomManagement.AddEquipment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600" x:Name="equipment">
+    <Grid Background="#20000000">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28*" />
+            <RowDefinition Height="335" />
+            <RowDefinition Height="37*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="42*" />
+            <ColumnDefinition Width="516" />
+            <ColumnDefinition Width="42*" />
+        </Grid.ColumnDefinitions>
+        <Grid  Grid.Column="1" Grid.Row="1">
+            <Grid x:Name="addDevice" Visibility="Visible">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40*" />
+                    <RowDefinition Height="296*" />
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" />
+                </Grid.Background>
+                <Label Content="几号机房" Height="34" HorizontalAlignment="Left" Name="addRoomName" VerticalAlignment="Top" Width="77" FontSize="16" Background="{x:Null}" Foreground="#FF990C19" Margin="6,6,0,0" />
+                <Label Content="编 号：" Grid.Row="1" Height="29" HorizontalAlignment="Left" Margin="22,21,0,0" Name="label10" VerticalAlignment="Top" Width="48" FontSize="12" />
+                <TextBox Grid.Row="1" Height="25" HorizontalAlignment="Left" Margin="69,21,0,0" Name="textBox3" VerticalAlignment="Top" Width="162" />
+                <Label Content="类 别：" Grid.Row="1" Height="27" HorizontalAlignment="Left" Margin="23,56,0,0" Name="label11" VerticalAlignment="Top" Width="47" FontSize="12" />
+                <ComboBox Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="69,56,0,0" Name="comboBox1" VerticalAlignment="Top" Width="162" FontSize="11">
+                    <ComboBoxItem Content="请选择.." IsManipulationEnabled="False" IsSelected="True" />
+                    <ComboBoxItem Content="服务器" />
+                    <ComboBoxItem Content="空调" />
+                    <ComboBoxItem Content="机柜" />
+                    <ComboBoxItem />
+                </ComboBox>
+                <Label Content="名 称：" Grid.Row="1" Height="27" HorizontalAlignment="Left" Margin="22,89,0,0" Name="label12" VerticalAlignment="Top" Width="44" FontSize="12" />
+                <TextBox Grid.Row="1" Height="25" HorizontalAlignment="Left" Margin="69,89,0,0" Name="textBox4" VerticalAlignment="Top" Width="162" />
+                <Label Content="描 述：" Grid.Row="1" Height="27" HorizontalAlignment="Left" Margin="23,179,0,0" Name="label13" VerticalAlignment="Top" Width="48" FontSize="12" />
+                <TextBox Grid.Row="1" Height="59" HorizontalAlignment="Left" Margin="69,159,0,0" Name="textBox5" VerticalAlignment="Top" Width="441" FontSize="11" TextWrapping="Wrap" />
+                <Button Content="提     交" Grid.Row="1" Height="37" HorizontalAlignment="Left" Margin="69,224,0,0" Name="button2" VerticalAlignment="Top" Width="120" FontSize="14" />
+                <Button Content="取    消" Grid.Row="1" Height="37" HorizontalAlignment="Left" Margin="264,224,0,0" Name="button3" VerticalAlignment="Top" Width="128" FontSize="14" Click="Add_Equipment"/>
+                <Label Content="所 属：" Grid.Row="1" Height="27" HorizontalAlignment="Left" Margin="23,122,0,0" Name="label8" VerticalAlignment="Top" Width="44" FontSize="11" />
+                <TextBox Grid.Row="1" Height="25" HorizontalAlignment="Left" Margin="69,123,0,0" Name="textBox6" VerticalAlignment="Top" Width="162" />
+                <Label Content="添加设备" Height="32" HorizontalAlignment="Left" Margin="72,6,0,0" Name="label9" VerticalAlignment="Top" Width="137" FontSize="16" />
+                <Border BorderBrush="Silver" BorderThickness="5" Grid.RowSpan="2" Height="335" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="516" />
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

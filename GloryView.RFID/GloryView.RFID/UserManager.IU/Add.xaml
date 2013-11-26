@@ -1,0 +1,49 @@
+﻿<dui:DazzleWindow x:Class="GloryView.RFID.UserManager.IU.Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dui="clr-namespace:GloryView.RFID.Controls"
+        Title="UserAdd" Height="300" Width="500">
+    <Grid Background="{x:Null}">
+<dui:DazzleButton HorizontalAlignment="Right" VerticalAlignment="Top" Width="27" Height="22" Margin="0,0,5,0" Click="exit_Click" Grid.Column="3">
+            <dui:DazzleButton.MyMoverBrush>
+                <ImageBrush ImageSource="/Skin/Button/xm.png"/>
+            </dui:DazzleButton.MyMoverBrush>
+            <dui:DazzleButton.MyEnterBrush>
+                <ImageBrush ImageSource="/Skin/Button/xe.png"/>
+            </dui:DazzleButton.MyEnterBrush>
+            <dui:DazzleButton.Background>
+                <ImageBrush ImageSource="/Skin/Button/xn.png"/>
+            </dui:DazzleButton.Background>
+        </dui:DazzleButton>
+
+<dui:DazzleButton HorizontalAlignment="Right" VerticalAlignment="Top" Width="27" Height="22" Margin="0,0,61,0" >
+            <dui:DazzleButton.MyMoverBrush>
+                <ImageBrush ImageSource="/Skin/Button/mim.png"/>
+            </dui:DazzleButton.MyMoverBrush>
+            <dui:DazzleButton.MyEnterBrush>
+                <ImageBrush ImageSource="/Skin/Button/mie.png"/>
+            </dui:DazzleButton.MyEnterBrush>
+            <dui:DazzleButton.Background>
+                <ImageBrush ImageSource="/Skin/Button/min.png"/>
+            </dui:DazzleButton.Background>
+</dui:DazzleButton>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+    <dui:DazzleWindow.Background>
+        <ImageBrush ImageSource="/GloryView.RFID;component/Skin/bg.png" />
+    </dui:DazzleWindow.Background>
+</dui:DazzleWindow>

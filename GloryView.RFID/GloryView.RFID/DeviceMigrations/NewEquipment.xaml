@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="GloryView.RFID.DeviceMigrations.NewEquipment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GloryView.RFID.PageControl"
+             xmlns:ut="clr-namespace:GloryView.RFID.User"
+             xmlns:nf="clr-namespace:GloryView.RFID.ReaderAndWriterClass"
+             xmlns:st="clr-namespace:GloryView.RFID.DeviceMigrations.DeviceClass"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="885" xmlns:my="clr-namespace:GloryView.RFID">
+    <UserControl.Resources>
+        <ut:DateString x:Key="dateStr" />
+        <st:StatusConverter x:Key="statusStr" />
+        <nf:NumberFormat x:Key="format" />
+    </UserControl.Resources>
+    <Grid x:Name="addequipment">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="506*" />
+            <RowDefinition Height="44" />
+        </Grid.RowDefinitions>
+        
+        <Grid Height="47" Name="grid1" VerticalAlignment="Top" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="106" />
+                <ColumnDefinition Width="768" />
+                <ColumnDefinition Width="11*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/listBox.jpg" Stretch="Fill" TileMode="FlipXY" Viewport="0,0,247,438" ViewportUnits="Absolute" />
+            </Grid.Background>
+            <Label Height="36" HorizontalAlignment="Left" Margin="6,6,0,0" Name="roomName" VerticalAlignment="Top" Width="83" FontSize="16" BorderBrush="Black" Content="设备入库" />
+            <Label Content="类 别：" Grid.Column="1" Height="29" HorizontalAlignment="Left" Margin="220,6,0,0" Name="label2" VerticalAlignment="Top" Width="49" FontSize="12" />
+            <Label Content="编 号：" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="348,9,0,0" Name="label3" VerticalAlignment="Top" Width="48" FontSize="12" />
+            <TextBox Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="410,13,0,0" Name="name" VerticalAlignment="Top" Width="119" />
+            <Button Content="搜  索" Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="546,12,0,0" Name="button1" VerticalAlignment="Top" Width="56" FontSize="11"  />
+            <ComboBox Grid.Column="1" Height="24" HorizontalAlignment="Left" Margin="267,9,0,0" Name="comboBox1" VerticalAlignment="Top" Width="75" FontSize="11">
+                <ComboBoxItem Content="所有设备" IsSelected="True" />
+                <ComboBoxItem Content="服务器" />
+                <ComboBoxItem Content="机柜" />
+                <ComboBoxItem Content="电脑" />
+                <ComboBoxItem Content="空调" />
+            </ComboBox>
+            <Menu Grid.Column="1" Height="21" HorizontalAlignment="Left" Margin="622,17,0,0" Name="menu1" VerticalAlignment="Top" Width="100" Background="{x:Null}">
+                <MenuItem Header="设备操作功能" Padding="0,2,2,2">
+                    <MenuItem.Icon>
+                        <Image Source="/GloryView.RFID;component/Images/user/21294124.gif" Width="12" />
+                    </MenuItem.Icon>
+                    <MenuItem Header="新设备信息录入" Click="Add_NewEquipment">
+                        <MenuItem.Icon>
+                            <Image Source="/GloryView.RFID;component/Images/user/21294124.gif" Width="12" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="读写器录入" Click="Add_ReaderAndWrite">
+                        <MenuItem.Icon>
+                            <Image Source="/GloryView.RFID;component/Images/user/21294124.gif" Width="12" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="保修设备入库申请" Click="Repair_Equipment">
+                        <MenuItem.Icon>
+                            <Image Source="/GloryView.RFID;component/Images/user/21294124.gif" Width="12" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+            <!--<Button Content="新设备信息录入" HorizontalAlignment="Left" Margin="502,16,0,7" Name="button2" Width="91" FontSize="11" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1" Click="Add_NewEquipment" Foreground="#FFCD001C" />-->
+        </Grid>
+        <DataGrid Margin="0,46,0,0" Name="comingGrild" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" BorderThickness="0" HorizontalScrollBarVisibility="Auto" Opacity="1" VerticalContentAlignment="Center" FontSize="12">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/GloryView.RFID;component/Skin/blueprint.png" Stretch="None" TileMode="Tile" Viewport="0,0,48,48" ViewportUnits="Absolute" />
+            </DataGrid.Background>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--当鼠标经过时 改变颜色-->
+                            <Setter Property="Background" Value="SkyBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}" Visibility="Hidden" />
+                <DataGridTextColumn Header="编 号" Width="150*" Binding="{Binding NUMBER}" />
+                <DataGridTextColumn Header="名 称" Width="80*" Binding="{Binding NAME}"/>
+                <DataGridTextColumn Header="设备类别" Width="80*" Binding="{Binding TYPE_NAME}" />
+                <DataGridTextColumn Header="机 房" Width="80*" Binding="{Binding ROOM_NAME}"/>
+                <DataGridTextColumn Header="创建用户" Width="80*" Binding="{Binding USER_NAME}"/>
+                <DataGridTextColumn Header="创建时间" Width="100*" Binding="{Binding STORAGE_TIME, Converter={StaticResource dateStr}}"/>
+                <DataGridTemplateColumn Header="操 作" Width="80*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Name="navigateTextBlock" Margin="14,0,0,5" Grid.Row="1" FontSize="11" TextWrapping="Wrap" Foreground="Yellow">
+                                <Hyperlink Name="edit" TextDecorations="{x:Null}" Click="Edit_Click" Foreground="#FFA80000">
+                                    <Image Source="/GloryView.RFID;component/Images/UIImage/edit.png" Width="25" Height="16" ToolTip="编辑设备信息" />
+                                </Hyperlink> |
+                                <Hyperlink Name="enter" TextDecorations="{x:Null}" Click="button3_Click">
+                                    <Image Source="/GloryView.RFID;component/Images/UIImage/zone.png" Width="25" Height="16" ToolTip="确认位置" />
+                                </Hyperlink>
+                            </TextBlock>
+                           <!-- <Button Content="入 库" Height="27"  Name="button3" VerticalAlignment="Top" Width="80" FontSize="11" Click="button3_Click" />-->
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <local:Pager x:Name="page" Background="#04000000" Grid.Row="1"></local:Pager>
+    </Grid>
+</UserControl>
